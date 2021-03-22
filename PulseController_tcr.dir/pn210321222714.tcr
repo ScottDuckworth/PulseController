@@ -1,0 +1,22 @@
+#Start recording tcl command: 3/21/2021 21:27:07
+#Project Location: C:/Users/scott/Documents/PulseController; Project name: PulseController
+prj_project new -name "PulseController" -impl "impl1" -dev LCMXO2-1200HC-6SG32I -synthesis "lse"
+file copy -force -- "C:/Users/scott/Documents/PulseController - Copy/PulseController.v" "C:/Users/scott/Documents/PulseController/impl1/source"
+prj_src add "C:/Users/scott/Documents/PulseController/impl1/source/PulseController.v"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/scott/Documents/PulseController/efb.v"
+prj_src remove "C:/Users/scott/Documents/PulseController/efb.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "C:/Users/scott/Documents/PulseController/efb.v"
+prj_src exclude "C:/Users/scott/Documents/PulseController/efb.v"
+prj_src add "C:/Users/scott/Documents/PulseController/efb.ipx"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 3/21/2021 22:27:14

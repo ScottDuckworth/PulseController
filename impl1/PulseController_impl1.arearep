@@ -1,0 +1,110 @@
+----------------------------------------------------------------------
+Report for cell PulseController.TECH
+Register bits:  309 of 1346 (22.957%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         2          100.0
+                              CCU2D        65          100.0
+                                EFB         1          100.0
+                            FD1P3AX       142          100.0
+                            FD1P3IX        40          100.0
+                            FD1P3JX         1          100.0
+                            FD1S3AX       112          100.0
+                            FD1S3IX        13          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4       157          100.0
+                                 OB         3          100.0
+                               OSCH         1          100.0
+                              PFUMX         8          100.0
+SUB MODULES
+                   PulseIn(BITS=13)         1
+                PulseIn(BITS=13)_U1         1
+                PulseIn(BITS=13)_U2         1
+                PulseIn(BITS=13)_U3         1
+                PulseIn(BITS=13)_U4         1
+                  PulseOut(BITS=13)         1
+               PulseOut(BITS=13)_U0         1
+                                efb         1
+                              TOTAL       561
+----------------------------------------------------------------------
+Report for cell PulseOut(BITS=13).v1
+Instance Path : y1_pulseout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15           23.1
+                            FD1P3AX        13            9.2
+                            FD1P3IX        14           35.0
+                               LUT4         5            3.2
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell PulseIn(BITS=13).v1
+Instance Path : a4_pulsein
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           10.8
+                            FD1P3AX        12            8.5
+                            FD1S3AX        17           15.2
+                               LUT4         1            0.6
+                              TOTAL        37
+----------------------------------------------------------------------
+Report for cell PulseOut(BITS=13)_U0.v1
+Instance Path : y0_pulseout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15           23.1
+                            FD1P3AX        13            9.2
+                            FD1P3IX        14           35.0
+                               LUT4         5            3.2
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell PulseIn(BITS=13)_U4.v1
+Instance Path : a0_pulsein
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           10.8
+                            FD1P3AX        13            9.2
+                            FD1S3AX        17           15.2
+                            FD1S3IX         1            7.7
+                               LUT4         3            1.9
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell PulseIn(BITS=13)_U3.v1
+Instance Path : a1_pulsein
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           10.8
+                            FD1P3AX        13            9.2
+                            FD1S3AX        17           15.2
+                            FD1S3IX         1            7.7
+                               LUT4         3            1.9
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell PulseIn(BITS=13)_U2.v1
+Instance Path : a2_pulsein
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           10.8
+                            FD1P3AX        12            8.5
+                            FD1S3AX        17           15.2
+                               LUT4         1            0.6
+                              TOTAL        37
+----------------------------------------------------------------------
+Report for cell PulseIn(BITS=13)_U1.v1
+Instance Path : a3_pulsein
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           10.8
+                            FD1P3AX        12            8.5
+                            FD1S3AX        17           15.2
+                               LUT4         6            3.8
+                              TOTAL        42
+----------------------------------------------------------------------
+Report for cell efb.v1
+Instance Path : efb
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1

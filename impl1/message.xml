@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1103805</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>In &quot;LOCATE COMP &quot;sda&quot; SITE &quot;27&quot; ;&quot;: </Dynamic>
+            <Dynamic>27</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103805</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>In &quot;LOCATE COMP &quot;scl&quot; SITE &quot;28&quot; ;&quot;: </Dynamic>
+            <Dynamic>28</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(131): </Dynamic>
+            <Dynamic>PulseController</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>131</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;3.02&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/efb.v(8): </Dynamic>
+            <Dynamic>efb</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/efb.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): </Dynamic>
+            <Dynamic>BB</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): </Dynamic>
+            <Dynamic>EFB(EFB_I2C1=&quot;ENABLED&quot;,EFB_TC_PORTMODE=&quot;WB&quot;,I2C1_SLAVE_ADDR=&quot;0b0001001&quot;,I2C2_SLAVE_ADDR=&quot;0b0001001&quot;,I2C1_CLK_DIVIDER=125,SPI_MODE=&quot;MASTER&quot;,TC_TOP_SEL=&quot;OFF&quot;,TC_OVERFLOW=&quot;DISABLED&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1800</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(53): </Dynamic>
+            <Dynamic>PulseIn(BITS=13)</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(101): </Dynamic>
+            <Dynamic>PulseOut(BITS=13)</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(387): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>387</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(389): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>389</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>wb_adr_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>wb_adr_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>wb_adr_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>wb_adr_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>wb_adr_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>scl</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001263</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sda</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

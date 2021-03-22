@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/21/2021 22:38:39
+#Project Location: C:/Users/scott/Documents/PulseController; Project name: PulseController
+prj_project open "C:/Users/scott/Documents/PulseController/PulseController.ldf"
+prj_src remove "C:/Users/scott/Documents/PulseController/efb.v"
+#Stop recording: 3/21/2021 23:02:21
