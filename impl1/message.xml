@@ -26,10 +26,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(131): </Dynamic>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(124): </Dynamic>
             <Dynamic>PulseController</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>131</Navigation>
+            <Navigation>124</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -98,20 +98,20 @@
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(387): </Dynamic>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(380): </Dynamic>
             <Dynamic>8</Dynamic>
             <Dynamic>5</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>387</Navigation>
+            <Navigation>380</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(389): </Dynamic>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(382): </Dynamic>
             <Dynamic>8</Dynamic>
             <Dynamic>5</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>389</Navigation>
+            <Navigation>382</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>

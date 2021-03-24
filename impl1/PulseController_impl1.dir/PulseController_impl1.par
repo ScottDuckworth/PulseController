@@ -4,11 +4,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 21 22:17:43 2021
+Tue Mar 23 22:40:51 2021
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f PulseController_impl1.p2t
 PulseController_impl1_map.ncd PulseController_impl1.dir
-PulseController_impl1.prf -gui
+PulseController_impl1.prf -gui -msgset
+C:/Users/scott/Documents/PulseController/promote.xml
 
 
 Preference file: PulseController_impl1.prf.
@@ -16,7 +17,7 @@ Preference file: PulseController_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            322.053      0            0.299        0            08           Completed
+5_1   *      0            321.723      0            0.299        0            08           Completed
 
 * : Design saved.
 

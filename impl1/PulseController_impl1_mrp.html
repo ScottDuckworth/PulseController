@@ -18,26 +18,26 @@ Command line:   map -a MachXO2 -p LCMXO2-1200HC -t QFN32 -s 6 -oc Industrial
      PulseController_impl1.prf -mp PulseController_impl1.mrp -lpf
      C:/Users/scott/Documents/PulseController/impl1/PulseController_impl1.lpf
      -lpf C:/Users/scott/Documents/PulseController/PulseController.lpf -c 0 -gui
-     
+     -msgset C:/Users/scott/Documents/PulseController/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  03/21/21  22:17:42
+Mapped on:  03/23/21  22:39:26
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    309 out of  1346 (23%)
-      PFU registers:          309 out of  1280 (24%)
+   Number of registers:    283 out of  1346 (21%)
+      PFU registers:          283 out of  1280 (22%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       168 out of   640 (26%)
-      SLICEs as Logic/ROM:    168 out of   640 (26%)
+   Number of SLICEs:       152 out of   640 (24%)
+      SLICEs as Logic/ROM:    152 out of   640 (24%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         65 out of   640 (10%)
-   Number of LUT4s:        284 out of  1280 (22%)
-      Number used as logic LUTs:        154
+      SLICEs as Carry:         51 out of   640 (8%)
+   Number of LUT4s:        255 out of  1280 (20%)
+      Number used as logic LUTs:        153
       Number used as distributed RAM:     0
-      Number used as ripple logic:      130
+      Number used as ripple logic:      102
       Number used as shift registers:     0
    Number of PIO sites used: 11 + 4(JTAG) out of 22 (68%)
    Number of block RAMs:  0 out of 7 (0%)
@@ -65,50 +65,42 @@ Mapped on:  03/21/21  22:17:42
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net clk: 167 loads, 167 rising, 0 falling (Driver: internal_oscillator )
+     Net clk: 151 loads, 151 rising, 0 falling (Driver: internal_oscillator )
      Net i2c1_scli: 1 loads, 1 rising, 0 falling (Driver: PIO scl )
 
-   Number of Clock Enables:  17
-     Net clk_enable_70: 7 loads, 7 LSLICEs
-     Net a1_rise: 8 loads, 8 LSLICEs
-     Net clk_enable_58: 4 loads, 4 LSLICEs
-     Net clk_enable_46: 13 loads, 13 LSLICEs
-     Net clk_enable_22: 4 loads, 4 LSLICEs
-     Net a4_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-     Net clk_enable_73: 2 loads, 2 LSLICEs
+   Number of Clock Enables:  13
+     Net clk_enable_56: 2 loads, 2 LSLICEs
+     Net clk_enable_54: 4 loads, 4 LSLICEs
+     Net clk_enable_18: 4 loads, 4 LSLICEs
      Net n775: 4 loads, 4 LSLICEs
-     Net clk_enable_51: 3 loads, 3 LSLICEs
-     Net clk_enable_15: 3 loads, 3 LSLICEs
-     Net clk_enable_94: 7 loads, 7 LSLICEs
-     Net a0_rise: 8 loads, 8 LSLICEs
-     Net clk_enable_85: 7 loads, 7 LSLICEs
-     Net a0_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
-     Net a1_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
-     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_42: 13 loads, 13 LSLICEs
+     Net a4_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_47: 3 loads, 3 LSLICEs
+     Net clk_enable_11: 3 loads, 3 LSLICEs
      Net a3_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-   Number of LSRs:  10
-     Net a1_rise: 7 loads, 7 LSLICEs
-     Net n1690: 1 loads, 1 LSLICEs
+     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net a1_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
+     Net clk_enable_65: 7 loads, 7 LSLICEs
+     Net a0_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
+   Number of LSRs:  6
+     Net n2162: 2 loads, 2 LSLICEs
+     Net n2165: 3 loads, 3 LSLICEs
      Net rst_c: 9 loads, 8 LSLICEs
-     Net n2223: 3 loads, 3 LSLICEs
-     Net n2224: 4 loads, 4 LSLICEs
-     Net n2220: 2 loads, 2 LSLICEs
-     Net a0_rise: 7 loads, 7 LSLICEs
-     Net n1688: 1 loads, 1 LSLICEs
-     Net a0_pulsein/high: 1 loads, 1 LSLICEs
      Net a1_pulsein/high: 1 loads, 1 LSLICEs
+     Net n2166: 4 loads, 4 LSLICEs
+     Net a0_pulsein/high: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net n767: 31 loads
+     Net count_2: 28 loads
      Net o_select_indicator_c: 28 loads
-     Net count_2: 27 loads
-     Net count_1: 24 loads
+     Net count_1: 25 loads
      Net count_0: 20 loads
      Net n769: 18 loads
-     Net a0_rise: 17 loads
-     Net a1_rise: 17 loads
      Net a0_pulsein/signal: 16 loads
      Net a1_pulsein/signal: 16 loads
+     Net a2_pulsein/signal: 15 loads
+     Net a3_pulsein/signal: 15 loads
 
 
 
@@ -126,7 +118,6 @@ WARNING - map: In "LOCATE COMP "sda" SITE "27" ;": Current SYS_CONFIG setting
      prohibits pin "27" to be used as user IO. This preference has been
      disabled.
 WARNING - map: In "LOCATE COMP "scl" SITE "28" ;": Current SYS_CONFIG setting
-
      prohibits pin "28" to be used as user IO. This preference has been
      disabled.
 
@@ -136,15 +127,20 @@ WARNING - map: In "LOCATE COMP "scl" SITE "28" ;": Current SYS_CONFIG setting
 
 +---------------------+-----------+-----------+------------+
 | IO Name             | Direction | Levelmode | IO         |
+
 |                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| i_a2_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | sda                 | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| i_a0_pwm            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | scl                 | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| i_a3_pwm            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | i_a1_pwm            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| i_a0_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | rst                 | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -154,10 +150,6 @@ WARNING - map: In "LOCATE COMP "scl" SITE "28" ;": Current SYS_CONFIG setting
 +---------------------+-----------+-----------+------------+
 | o_select_indicator  | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| i_a2_pwm            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| i_a3_pwm            | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | i_a4_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
@@ -166,121 +158,62 @@ WARNING - map: In "LOCATE COMP "scl" SITE "28" ;": Current SYS_CONFIG setting
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal n3098 was merged into signal rst_c
-Signal clk_enable_10 was merged into signal a1_rise
-Signal clk_enable_8 was merged into signal a0_rise
-Signal clk_enable_95 was merged into signal n775
+Signal rst_N_18 was merged into signal rst_c
+Signal clk_enable_67 was merged into signal n775
 Signal GND_net undriven or does not drive anything - clipped.
-Signal a3_pulsein/count_517_add_4_13/CO undriven or does not drive anything -
+Signal a0_pulsein/count_498_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal a3_pulsein/count_517_add_4_1/S0 undriven or does not drive anything -
+Signal a0_pulsein/count_498_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a3_pulsein/count_517_add_4_1/CI undriven or does not drive anything -
+Signal a0_pulsein/count_498_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal a2_pulsein/count_516_add_4_1/S0 undriven or does not drive anything -
+Signal y0_pulseout/count_503_add_4_15/S1 undriven or does not drive anything -
      clipped.
-Signal a2_pulsein/count_516_add_4_1/CI undriven or does not drive anything -
+Signal y0_pulseout/count_503_add_4_15/CO undriven or does not drive anything -
      clipped.
-Signal a2_pulsein/count_516_add_4_13/CO undriven or does not drive anything -
+Signal y0_pulseout/count_503_add_4_1/S1 undriven or does not drive anything -
      clipped.
-Signal a1_pulsein/count_515_add_4_13/CO undriven or does not drive anything -
+Signal y0_pulseout/count_503_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal y0_pulseout/count_503_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal a1_pulsein/count_499_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Signal a1_pulsein/count_499_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal a1_pulsein/count_499_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal a2_pulsein/count_500_add_4_1/S0 undriven or does not drive anything -
      clipped.
 
-Signal a1_pulsein/count_515_add_4_1/S0 undriven or does not drive anything -
+Signal a2_pulsein/count_500_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a1_pulsein/count_515_add_4_1/CI undriven or does not drive anything -
+Signal a2_pulsein/count_500_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal a0_pulsein/count_514_add_4_1/S0 undriven or does not drive anything -
+Signal a3_pulsein/count_501_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal a0_pulsein/count_514_add_4_1/CI undriven or does not drive anything -
+Signal a3_pulsein/count_501_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a0_pulsein/count_514_add_4_13/CO undriven or does not drive anything -
+Signal a3_pulsein/count_501_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_1/S1 undriven or does not drive anything -
+Signal a4_pulsein/count_502_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_1/S0 undriven or does not drive anything -
+Signal a4_pulsein/count_502_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_1/CI undriven or does not drive anything -
+Signal a4_pulsein/count_502_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_3/S1 undriven or does not drive anything -
+Signal y1_pulseout/count_504_add_4_1/S1 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_3/S0 undriven or does not drive anything -
+Signal y1_pulseout/count_504_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_5/S1 undriven or does not drive anything -
+Signal y1_pulseout/count_504_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_5/S0 undriven or does not drive anything -
+Signal y1_pulseout/count_504_add_4_15/S1 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_7/S1 undriven or does not drive anything -
+Signal y1_pulseout/count_504_add_4_15/CO undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/sub_455_add_2_7/S0 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_11/S1 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_13/S1 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_13/S0 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_cout/S1 undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/sub_455_add_2_cout/CO undriven or does not drive anything -
-     clipped.
-Signal y0_pulseout/add_5_13/CO undriven or does not drive anything - clipped.
-Signal y0_pulseout/add_5_1/S0 undriven or does not drive anything - clipped.
-Signal y0_pulseout/add_5_1/CI undriven or does not drive anything - clipped.
-Signal a4_pulsein/count_518_add_4_13/CO undriven or does not drive anything -
-     clipped.
-Signal a4_pulsein/count_518_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal a4_pulsein/count_518_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_13/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_13/S0 undriven or does not drive anything -
-
-     clipped.
-Signal y1_pulseout/sub_457_add_2_cout/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_cout/CO undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/add_5_13/CO undriven or does not drive anything - clipped.
-Signal y1_pulseout/sub_457_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_1/CI undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_3/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_3/S0 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_5/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_5/S0 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_7/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_7/S0 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/add_5_1/S0 undriven or does not drive anything - clipped.
-Signal y1_pulseout/add_5_1/CI undriven or does not drive anything - clipped.
-Signal y1_pulseout/sub_457_add_2_11/S1 undriven or does not drive anything -
-     clipped.
-Signal y1_pulseout/sub_457_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Block rst_I_0_1_lut_rep_17 was optimized away.
-Block a1_pulsein/i537_1_lut_rep_24 was optimized away.
-Block a0_pulsein/i533_1_lut_rep_26 was optimized away.
-Block i992_1_lut_rep_25 was optimized away.
+Block rst_I_0_1_lut was optimized away.
+Block i962_1_lut_rep_21 was optimized away.
 Block i1 was optimized away.
 
      
@@ -300,7 +233,6 @@ OSC 1:                                     Pin/Node Value
 <A name="mrp_efb"></A><B><U><big>Embedded Functional Block Connection Summary</big></U></B>
 
    Desired WISHBONE clock frequency: 50.0 MHz
-
    Clock source:                     clk
    Reset source:                     rst_c
    Functions mode:
@@ -311,6 +243,7 @@ OSC 1:                                     Pin/Node Value
       Timer/Counter Mode:            WB
       UFM Connection:                DISABLED
       PLL0 Connection:               DISABLED
+
       PLL1 Connection:               DISABLED
    I2C Function Summary:
    --------------------
@@ -361,54 +294,7 @@ Instance Name: efb/EFBInst_0
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
    Peak Memory Usage: 41 MB
-
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

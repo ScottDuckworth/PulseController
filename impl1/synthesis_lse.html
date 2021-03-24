@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 21 22:17:40 2021
+Tue Mar 23 22:39:24 2021
 
 
-Command Line:  synthesis -f PulseController_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f PulseController_impl1_lattice.synproj -gui -msgset C:/Users/scott/Documents/PulseController/promote.xml 
 
 Synthesis options:
 The -a option is MachXO2.
@@ -90,7 +90,7 @@ Analyzing Verilog file c:/users/scott/documents/pulsecontroller/impl1/source/pul
 Analyzing Verilog file c:/users/scott/documents/pulsecontroller/efb.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): PulseController
-INFO - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(131): compiling module PulseController. VERI-1018
+INFO - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(124): compiling module PulseController. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="3.02"). VERI-1018
 INFO - synthesis: c:/users/scott/documents/pulsecontroller/efb.v(8): compiling module efb. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
@@ -99,8 +99,8 @@ INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/mac
 INFO - synthesis: C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): compiling module EFB(EFB_I2C1="ENABLED",EFB_TC_PORTMODE="WB",I2C1_SLAVE_ADDR="0b0001001",I2C2_SLAVE_ADDR="0b0001001",I2C1_CLK_DIVIDER=125,SPI_MODE="MASTER",TC_TOP_SEL="OFF",TC_OVERFLOW="DISABLED"). VERI-1018
 INFO - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(53): compiling module PulseIn(BITS=13). VERI-1018
 INFO - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(101): compiling module PulseOut(BITS=13). VERI-1018
-WARNING - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(387): expression size 8 truncated to fit in target size 5. VERI-1209
-WARNING - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(389): expression size 8 truncated to fit in target size 5. VERI-1209
+WARNING - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(380): expression size 8 truncated to fit in target size 5. VERI-1209
+WARNING - synthesis: c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(382): expression size 8 truncated to fit in target size 5. VERI-1209
 Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -158,19 +158,19 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file PulseController_impl1.ngd.
 
 ################### Begin Area Report (PulseController)######################
-Number of register bits => 309 of 1346 (22 % )
+Number of register bits => 283 of 1346 (21 % )
 BB => 2
-CCU2D => 65
+CCU2D => 51
 EFB => 1
-FD1P3AX => 142
-FD1P3IX => 40
+FD1P3AX => 116
+FD1P3IX => 12
 FD1P3JX => 1
-FD1S3AX => 112
+FD1S3AX => 140
 FD1S3IX => 13
 FD1S3JX => 1
 GSR => 1
 IB => 6
-LUT4 => 157
+LUT4 => 154
 OB => 3
 OSCH => 1
 PFUMX => 8
@@ -183,33 +183,33 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : clk, loads : 310
+  Net : clk, loads : 284
   Net : i2c1_scli, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 19
+Number of Clock Enables: 13
 Top 10 highest fanout Clock Enables:
-  Net : clk_enable_46, loads : 26
+  Net : clk_enable_42, loads : 26
   Net : a0_pulsein/o_pw_12__N_220, loads : 13
   Net : a1_pulsein/o_pw_12__N_220, loads : 13
-  Net : a3_pulsein/o_pw_12__N_220, loads : 12
   Net : a4_pulsein/o_pw_12__N_220, loads : 12
+  Net : a3_pulsein/o_pw_12__N_220, loads : 12
   Net : a2_pulsein/o_pw_12__N_220, loads : 12
-  Net : clk_enable_94, loads : 8
-  Net : clk_enable_58, loads : 8
-  Net : clk_enable_22, loads : 8
-  Net : clk_enable_51, loads : 5
+  Net : clk_enable_65, loads : 8
+  Net : clk_enable_18, loads : 8
+  Net : clk_enable_54, loads : 8
+  Net : clk_enable_47, loads : 5
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : n767, loads : 31
-  Net : a0_pulsein/a0_rise, loads : 30
-  Net : a1_pulsein/a1_rise, loads : 30
   Net : o_select_indicator_c, loads : 28
-  Net : count_2, loads : 27
-  Net : clk_enable_46, loads : 26
-  Net : count_1, loads : 24
+  Net : count_2, loads : 28
+  Net : clk_enable_42, loads : 26
+  Net : count_1, loads : 25
   Net : count_0, loads : 20
   Net : n769, loads : 18
-  Net : n3098, loads : 16
+  Net : rst_N_18, loads : 16
+  Net : a1_pulsein/signal, loads : 16
+  Net : a0_pulsein/signal, loads : 16
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -227,10 +227,10 @@ clk0 [get_nets clk]                     |  200.000 MHz|  128.518 MHz|     8 *
 1 constraints not met.
 
 
-Peak Memory Usage: 59.578  MB
+Peak Memory Usage: 58.652  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.094  secs
+Elapsed CPU time for LSE flow : 0.938  secs
 --------------------------------------------------------------
 
 

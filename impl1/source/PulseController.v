@@ -107,23 +107,16 @@ module PulseOut #(
 	output wire o_signal          // Output signal
 );
 
-	reg [BITS-1:0] count, pw;
+	reg [BITS-1:0] count;
 	reg signal;
 	
 	assign o_signal = signal;
 
 	always @(posedge clk) begin
-		if (i_pulse) begin
-			pw    <= i_pw;
-			count <= 1'b0;
-		end
-		else if (count < pw) begin
-			signal <= pw ? 1'b1 : 1'b0;
-			count  <= count + 1'b1;
-		end
-		else begin
-			signal <= 1'b0;
-		end
+		signal <= 1'b0;
+		if (count)   signal <= 1'b1;
+		if (count)   count  <= count - 1'b1;
+		if (i_pulse) count  <= i_pw;
 	end
 
 endmodule

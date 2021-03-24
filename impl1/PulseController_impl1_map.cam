@@ -1,85 +1,53 @@
 [ START MERGED ]
-clk_enable_10 a1_rise
-n3098 rst_c
-clk_enable_95 n775
-clk_enable_8 a0_rise
+rst_N_18 rst_c
+clk_enable_67 n775
 [ END MERGED ]
 [ START CLIPPED ]
 GND_net
-a3_pulsein/count_517_add_4_13/CO
-a3_pulsein/count_517_add_4_1/S0
-a3_pulsein/count_517_add_4_1/CI
-a2_pulsein/count_516_add_4_1/S0
-a2_pulsein/count_516_add_4_1/CI
-a2_pulsein/count_516_add_4_13/CO
-a1_pulsein/count_515_add_4_13/CO
-a1_pulsein/count_515_add_4_1/S0
-a1_pulsein/count_515_add_4_1/CI
-a0_pulsein/count_514_add_4_1/S0
-a0_pulsein/count_514_add_4_1/CI
-a0_pulsein/count_514_add_4_13/CO
-y0_pulseout/sub_455_add_2_1/S1
-y0_pulseout/sub_455_add_2_1/S0
-y0_pulseout/sub_455_add_2_1/CI
-y0_pulseout/sub_455_add_2_3/S1
-y0_pulseout/sub_455_add_2_3/S0
-y0_pulseout/sub_455_add_2_5/S1
-y0_pulseout/sub_455_add_2_5/S0
-y0_pulseout/sub_455_add_2_7/S1
-y0_pulseout/sub_455_add_2_7/S0
-y0_pulseout/sub_455_add_2_9/S1
-y0_pulseout/sub_455_add_2_9/S0
-y0_pulseout/sub_455_add_2_11/S1
-y0_pulseout/sub_455_add_2_11/S0
-y0_pulseout/sub_455_add_2_13/S1
-y0_pulseout/sub_455_add_2_13/S0
-y0_pulseout/sub_455_add_2_cout/S1
-y0_pulseout/sub_455_add_2_cout/CO
-y0_pulseout/add_5_13/CO
-y0_pulseout/add_5_1/S0
-y0_pulseout/add_5_1/CI
-a4_pulsein/count_518_add_4_13/CO
-a4_pulsein/count_518_add_4_1/S0
-a4_pulsein/count_518_add_4_1/CI
-y1_pulseout/sub_457_add_2_13/S1
-y1_pulseout/sub_457_add_2_13/S0
-y1_pulseout/sub_457_add_2_cout/S1
-y1_pulseout/sub_457_add_2_cout/CO
-y1_pulseout/add_5_13/CO
-y1_pulseout/sub_457_add_2_1/S1
-y1_pulseout/sub_457_add_2_1/S0
-y1_pulseout/sub_457_add_2_1/CI
-y1_pulseout/sub_457_add_2_3/S1
-y1_pulseout/sub_457_add_2_3/S0
-y1_pulseout/sub_457_add_2_5/S1
-y1_pulseout/sub_457_add_2_5/S0
-y1_pulseout/sub_457_add_2_7/S1
-y1_pulseout/sub_457_add_2_7/S0
-y1_pulseout/sub_457_add_2_9/S1
-y1_pulseout/sub_457_add_2_9/S0
-y1_pulseout/add_5_1/S0
-y1_pulseout/add_5_1/CI
-y1_pulseout/sub_457_add_2_11/S1
-y1_pulseout/sub_457_add_2_11/S0
+a0_pulsein/count_498_add_4_1/S0
+a0_pulsein/count_498_add_4_1/CI
+a0_pulsein/count_498_add_4_13/CO
+y0_pulseout/count_503_add_4_15/S1
+y0_pulseout/count_503_add_4_15/CO
+y0_pulseout/count_503_add_4_1/S1
+y0_pulseout/count_503_add_4_1/S0
+y0_pulseout/count_503_add_4_1/CI
+a1_pulsein/count_499_add_4_13/CO
+a1_pulsein/count_499_add_4_1/S0
+a1_pulsein/count_499_add_4_1/CI
+a2_pulsein/count_500_add_4_1/S0
+a2_pulsein/count_500_add_4_1/CI
+a2_pulsein/count_500_add_4_13/CO
+a3_pulsein/count_501_add_4_1/S0
+a3_pulsein/count_501_add_4_1/CI
+a3_pulsein/count_501_add_4_13/CO
+a4_pulsein/count_502_add_4_1/S0
+a4_pulsein/count_502_add_4_1/CI
+a4_pulsein/count_502_add_4_13/CO
+y1_pulseout/count_504_add_4_1/S1
+y1_pulseout/count_504_add_4_1/S0
+y1_pulseout/count_504_add_4_1/CI
+y1_pulseout/count_504_add_4_15/S1
+y1_pulseout/count_504_add_4_15/CO
 [ END CLIPPED ]
 [ START OSC ]
 clk 3.02
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Sun Mar 21 22:17:42 2021
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue Mar 23 22:39:26 2021
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=ENABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "i_a2_pwm" SITE "21" ;
 LOCATE COMP "sda" SITE "27" ;
-LOCATE COMP "i_a0_pwm" SITE "17" ;
 LOCATE COMP "scl" SITE "28" ;
+LOCATE COMP "i_a3_pwm" SITE "23" ;
 LOCATE COMP "i_a1_pwm" SITE "20" ;
+LOCATE COMP "i_a0_pwm" SITE "17" ;
 LOCATE COMP "rst" SITE "26" ;
 LOCATE COMP "o_y1_pwm" SITE "16" ;
 LOCATE COMP "o_y0_pwm" SITE "14" ;
 LOCATE COMP "o_select_indicator" SITE "13" ;
-LOCATE COMP "i_a2_pwm" SITE "21" ;
-LOCATE COMP "i_a3_pwm" SITE "23" ;
 LOCATE COMP "i_a4_pwm" SITE "25" ;
 FREQUENCY NET "clk" 3.020000 MHz ;
 SCHEMATIC END ;

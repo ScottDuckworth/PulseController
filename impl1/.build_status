@@ -6,37 +6,37 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1616390275"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1616564463"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1616390263">
-            <Task name="Map" build_result="2" update_result="0" update_time="1616390263"/>
+        <Milestone name="Map" build_result="2" build_time="1616564367">
+            <Task name="Map" build_result="2" update_result="0" update_time="1616564367"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1616390271">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1616390271"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1616390272"/>
+        <Milestone name="PAR" build_result="2" build_time="1616564459">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1616564459"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1616564460"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1616390262">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1616390262"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1616390275"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1616564366">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1616564366"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1616564367"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1616390257"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1616390257"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1616564362"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1616564362"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/PulseController_impl1_map.vdb" last_build_time="1616390263" last_build_size="128734"/>
-        <Report name="PulseController_impl1.bgn" last_build_time="1616390274" last_build_size="4327"/>
-        <Report name="PulseController_impl1.jed" last_build_time="1616390274" last_build_size="350268"/>
-        <Report name="PulseController_impl1.lsedata" last_build_time="1616390260" last_build_size="440729"/>
-        <Report name="PulseController_impl1.ncd" last_build_time="1616390271" last_build_size="374390"/>
-        <Report name="PulseController_impl1.ngd" last_build_time="1616390262" last_build_size="318688"/>
-        <Report name="PulseController_impl1.twr" last_build_time="1616390272" last_build_size="43577"/>
-        <Report name="PulseController_impl1_map.ncd" last_build_time="1616390262" last_build_size="255366"/>
+        <Report name=".vdbs/PulseController_impl1_map.vdb" last_build_time="1616564367" last_build_size="122541"/>
+        <Report name="PulseController_impl1.bgn" last_build_time="1616564463" last_build_size="4388"/>
+        <Report name="PulseController_impl1.jed" last_build_time="1616564463" last_build_size="350268"/>
+        <Report name="PulseController_impl1.lsedata" last_build_time="1616564365" last_build_size="415397"/>
+        <Report name="PulseController_impl1.ncd" last_build_time="1616564459" last_build_size="347483"/>
+        <Report name="PulseController_impl1.ngd" last_build_time="1616564366" last_build_size="287668"/>
+        <Report name="PulseController_impl1.twr" last_build_time="1616564460" last_build_size="46383"/>
+        <Report name="PulseController_impl1_map.ncd" last_build_time="1616564366" last_build_size="234612"/>
     </Strategy>
 </BuildStatus>
