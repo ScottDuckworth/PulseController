@@ -15,7 +15,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  03/23/21  22:39:26
+Mapped on:  03/26/21  00:02:18
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  PulseController                               Date:  03/23/21  22:39:26
+Design:  PulseController                               Date:  03/26/21  00:02:18
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  PulseController                               Date:  03/23/21  22:39:26
+Design:  PulseController                               Date:  03/26/21  00:02:18
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ Signal a2_pulsein/count_500_add_4_1/S0 undriven or does not drive anything -
 
 
 
-Design:  PulseController                               Date:  03/23/21  22:39:26
+Design:  PulseController                               Date:  03/26/21  00:02:18
 
 Removed logic (cont)
 --------------------
@@ -264,7 +264,7 @@ Embedded Functional Block Connection Summary
 
 
 
-Design:  PulseController                               Date:  03/23/21  22:39:26
+Design:  PulseController                               Date:  03/26/21  00:02:18
 
 Embedded Functional Block Connection Summary (cont)
 ---------------------------------------------------

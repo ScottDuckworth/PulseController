@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.12.0.240.2
-// Netlist written on Tue Mar 23 22:39:26 2021
+// Netlist written on Fri Mar 26 00:00:32 2021
 //
 // Verilog Description of module PulseController
 //

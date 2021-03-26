@@ -6,21 +6,21 @@ Performance Grade:      6
 PACKAGE:          QFN32
 Package Status:                     Preliminary    Version 1.42
 
-Tue Mar 23 22:40:57 2021
+Fri Mar 26 00:02:24 2021
 
 Pinout by Port Name:
 +--------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
 | Port Name          | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                               |
 +--------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
-| i_a0_pwm           | 17/2     | LVCMOS33_IN   | PB20D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| i_a1_pwm           | 20/1     | LVCMOS33_IN   | PR5D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| i_a2_pwm           | 21/1     | LVCMOS33_IN   | PR5C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| i_a3_pwm           | 23/0     | LVCMOS33_IN   | PT17D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
-| i_a4_pwm           | 25/0     | LVCMOS33_IN   | PT15D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_a0_pwm           | 20/1     | LVCMOS33_IN   | PR5D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_a1_pwm           | 21/1     | LVCMOS33_IN   | PR5C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_a2_pwm           | 23/0     | LVCMOS33_IN   | PT17D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_a3_pwm           | 25/0     | LVCMOS33_IN   | PT15D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_a4_pwm           | 26/0     | LVCMOS33_IN   | PT15C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
 | o_select_indicator | 13/2     | LVCMOS33_OUT  | PB11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| o_y0_pwm           | 14/2     | LVCMOS33_OUT  | PB11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| o_y1_pwm           | 16/2     | LVCMOS33_OUT  | PB20C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
-| rst                | 26/0     | LVCMOS33_IN   | PT15C |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
+| o_y0_pwm           | 16/2     | LVCMOS33_OUT  | PB20C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| o_y1_pwm           | 17/2     | LVCMOS33_OUT  | PB20D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| rst                | 12/2     | LVCMOS33_IN   | PB9B  |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
 | scl                | 28/0     | LVCMOS33_BIDI | PT12C |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
 | sda                | 27/0     | LVCMOS33_BIDI | PT12D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
 +--------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
@@ -52,16 +52,16 @@ Pinout by Pin Number:
 | 9/2      |     unused, PULL:DOWN |            |               | PB6C  | MCLK/CCLK     |           |           |
 | 10/2     |     unused, PULL:DOWN |            |               | PB6D  | SO/SPISO      |           |           |
 | 11/2     |     unused, PULL:DOWN |            |               | PB9A  | PCLKT2_0      |           |           |
-| 12/2     |     unused, PULL:DOWN |            |               | PB9B  | PCLKC2_0      |           |           |
+| 12/2     | rst                   | LOCATED    | LVCMOS33_IN   | PB9B  | PCLKC2_0      |           |           |
 | 13/2     | o_select_indicator    | LOCATED    | LVCMOS33_OUT  | PB11A | PCLKT2_1      |           |           |
-| 14/2     | o_y0_pwm              | LOCATED    | LVCMOS33_OUT  | PB11B | PCLKC2_1      |           |           |
-| 16/2     | o_y1_pwm              | LOCATED    | LVCMOS33_OUT  | PB20C | SN            |           |           |
-| 17/2     | i_a0_pwm              | LOCATED    | LVCMOS33_IN   | PB20D | SI/SISPI      |           |           |
-| 20/1     | i_a1_pwm              | LOCATED    | LVCMOS33_IN   | PR5D  | PCLKC1_0/DQ0  |           |           |
-| 21/1     | i_a2_pwm              | LOCATED    | LVCMOS33_IN   | PR5C  | PCLKT1_0/DQ0  |           |           |
-| 23/0     | i_a3_pwm              | LOCATED    | LVCMOS33_IN   | PT17D | DONE          |           |           |
-| 25/0     | i_a4_pwm              | LOCATED    | LVCMOS33_IN   | PT15D | PROGRAMN      |           |           |
-| 26/0     | rst                   | LOCATED    | LVCMOS33_IN   | PT15C | JTAGENB       |           |           |
+| 14/2     |     unused, PULL:DOWN |            |               | PB11B | PCLKC2_1      |           |           |
+| 16/2     | o_y0_pwm              | LOCATED    | LVCMOS33_OUT  | PB20C | SN            |           |           |
+| 17/2     | o_y1_pwm              | LOCATED    | LVCMOS33_OUT  | PB20D | SI/SISPI      |           |           |
+| 20/1     | i_a0_pwm              | LOCATED    | LVCMOS33_IN   | PR5D  | PCLKC1_0/DQ0  |           |           |
+| 21/1     | i_a1_pwm              | LOCATED    | LVCMOS33_IN   | PR5C  | PCLKT1_0/DQ0  |           |           |
+| 23/0     | i_a2_pwm              | LOCATED    | LVCMOS33_IN   | PT17D | DONE          |           |           |
+| 25/0     | i_a3_pwm              | LOCATED    | LVCMOS33_IN   | PT15D | PROGRAMN      |           |           |
+| 26/0     | i_a4_pwm              | LOCATED    | LVCMOS33_IN   | PT15C | JTAGENB       |           |           |
 | 27/0     | sda                   |            | LVCMOS33_BIDI | PT12D | SDA/PCLKC0_0  |           |           |
 | 28/0     | scl                   |            | LVCMOS33_BIDI | PT12C | SCL/PCLKT0_0  |           |           |
 | 29/0     | Reserved: sysCONFIG   |            |               | PT11D | TMS           |           |           |
@@ -173,15 +173,15 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
-LOCATE  COMP  "i_a0_pwm"  SITE  "17";
-LOCATE  COMP  "i_a1_pwm"  SITE  "20";
-LOCATE  COMP  "i_a2_pwm"  SITE  "21";
-LOCATE  COMP  "i_a3_pwm"  SITE  "23";
-LOCATE  COMP  "i_a4_pwm"  SITE  "25";
+LOCATE  COMP  "i_a0_pwm"  SITE  "20";
+LOCATE  COMP  "i_a1_pwm"  SITE  "21";
+LOCATE  COMP  "i_a2_pwm"  SITE  "23";
+LOCATE  COMP  "i_a3_pwm"  SITE  "25";
+LOCATE  COMP  "i_a4_pwm"  SITE  "26";
 LOCATE  COMP  "o_select_indicator"  SITE  "13";
-LOCATE  COMP  "o_y0_pwm"  SITE  "14";
-LOCATE  COMP  "o_y1_pwm"  SITE  "16";
-LOCATE  COMP  "rst"  SITE  "26";
+LOCATE  COMP  "o_y0_pwm"  SITE  "16";
+LOCATE  COMP  "o_y1_pwm"  SITE  "17";
+LOCATE  COMP  "rst"  SITE  "12";
 LOCATE  COMP  "scl"  SITE  "28";
 LOCATE  COMP  "sda"  SITE  "27";
 
@@ -195,5 +195,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Mar 23 22:40:57 2021
+Fri Mar 26 00:02:25 2021
 

@@ -1,19 +1,19 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Tue Mar 23 22:41:03 2021 *
+NOTE DATE CREATED: Fri Mar 26 00:02:30 2021 *
 NOTE DESIGN NAME: PulseController *
 NOTE DEVICE NAME: LCMXO2-1200HC-6QFN32 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS i_a2_pwm : 21 : in *
+NOTE PINS i_a2_pwm : 23 : in *
 NOTE PINS sda : 27 : inout *
 NOTE PINS scl : 28 : inout *
-NOTE PINS i_a3_pwm : 23 : in *
-NOTE PINS i_a1_pwm : 20 : in *
-NOTE PINS i_a0_pwm : 17 : in *
-NOTE PINS rst : 26 : in *
-NOTE PINS o_y1_pwm : 16 : out *
-NOTE PINS o_y0_pwm : 14 : out *
+NOTE PINS i_a3_pwm : 25 : in *
+NOTE PINS i_a1_pwm : 21 : in *
+NOTE PINS i_a0_pwm : 20 : in *
+NOTE PINS rst : 12 : in *
+NOTE PINS o_y1_pwm : 17 : out *
+NOTE PINS o_y0_pwm : 16 : out *
 NOTE PINS o_select_indicator : 13 : out *
-NOTE PINS i_a4_pwm : 25 : in *
+NOTE PINS i_a4_pwm : 26 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *
