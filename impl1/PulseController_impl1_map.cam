@@ -1,54 +1,59 @@
 [ START MERGED ]
-rst_N_18 rst_c
-clk_enable_67 n775
+n3230 rst_c
+clk_enable_66 n783
 [ END MERGED ]
 [ START CLIPPED ]
 GND_net
-a0_pulsein/count_498_add_4_1/S0
-a0_pulsein/count_498_add_4_1/CI
-a0_pulsein/count_498_add_4_13/CO
-y0_pulseout/count_503_add_4_15/S1
-y0_pulseout/count_503_add_4_15/CO
-y0_pulseout/count_503_add_4_1/S1
-y0_pulseout/count_503_add_4_1/S0
-y0_pulseout/count_503_add_4_1/CI
-a1_pulsein/count_499_add_4_13/CO
-a1_pulsein/count_499_add_4_1/S0
-a1_pulsein/count_499_add_4_1/CI
-a2_pulsein/count_500_add_4_1/S0
-a2_pulsein/count_500_add_4_1/CI
-a2_pulsein/count_500_add_4_13/CO
-a3_pulsein/count_501_add_4_1/S0
-a3_pulsein/count_501_add_4_1/CI
-a3_pulsein/count_501_add_4_13/CO
-a4_pulsein/count_502_add_4_1/S0
-a4_pulsein/count_502_add_4_1/CI
-a4_pulsein/count_502_add_4_13/CO
-y1_pulseout/count_504_add_4_1/S1
-y1_pulseout/count_504_add_4_1/S0
-y1_pulseout/count_504_add_4_1/CI
-y1_pulseout/count_504_add_4_15/S1
-y1_pulseout/count_504_add_4_15/CO
+y1_pulseout/count_523_add_4_15/S1
+y1_pulseout/count_523_add_4_15/CO
+y1_pulseout/count_523_add_4_1/S1
+y1_pulseout/count_523_add_4_1/S0
+y1_pulseout/count_523_add_4_1/CI
+y0_pulseout/count_522_add_4_1/S1
+y0_pulseout/count_522_add_4_1/S0
+y0_pulseout/count_522_add_4_1/CI
+y0_pulseout/count_522_add_4_15/S1
+y0_pulseout/count_522_add_4_15/CO
+a0_pulsein/count_517_add_4_1/S0
+a0_pulsein/count_517_add_4_1/CI
+a0_pulsein/count_517_add_4_13/CO
+a3_pulsein/count_520_add_4_1/S0
+a3_pulsein/count_520_add_4_1/CI
+a3_pulsein/count_520_add_4_13/CO
+revcounter/dff_6_524_add_4_1/S0
+revcounter/dff_6_524_add_4_1/CI
+revcounter/dff_6_524_add_4_9/S1
+revcounter/dff_6_524_add_4_9/CO
+a2_pulsein/count_519_add_4_1/S0
+a2_pulsein/count_519_add_4_1/CI
+a2_pulsein/count_519_add_4_13/CO
+a1_pulsein/count_518_add_4_13/CO
+a1_pulsein/count_518_add_4_1/S0
+a1_pulsein/count_518_add_4_1/CI
+a4_pulsein/count_521_add_4_1/S0
+a4_pulsein/count_521_add_4_1/CI
+a4_pulsein/count_521_add_4_13/CO
 [ END CLIPPED ]
 [ START OSC ]
 clk 3.02
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Fri Mar 26 00:02:19 2021
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Sun Mar 28 23:42:37 2021
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=ENABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
-LOCATE COMP "i_a2_pwm" SITE "23" ;
+LOCATE COMP "i_a3_pwm" SITE "25" ;
 LOCATE COMP "sda" SITE "27" ;
 LOCATE COMP "scl" SITE "28" ;
-LOCATE COMP "i_a3_pwm" SITE "25" ;
+LOCATE COMP "i_a2_pwm" SITE "23" ;
+LOCATE COMP "i_a4_pwm" SITE "26" ;
 LOCATE COMP "i_a1_pwm" SITE "21" ;
 LOCATE COMP "i_a0_pwm" SITE "20" ;
 LOCATE COMP "rst" SITE "12" ;
 LOCATE COMP "o_y1_pwm" SITE "17" ;
 LOCATE COMP "o_y0_pwm" SITE "16" ;
 LOCATE COMP "o_select_indicator" SITE "13" ;
-LOCATE COMP "i_a4_pwm" SITE "26" ;
+LOCATE COMP "i_rev_pulse" SITE "14" ;
 FREQUENCY NET "clk" 3.020000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

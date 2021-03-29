@@ -1,4 +1,249 @@
 
+synthesis -f "PulseController_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Mar 28 23:42:35 2021
+
+
+Command Line:  synthesis -f PulseController_impl1_lattice.synproj -gui -msgset C:/Users/scott/Documents/PulseController/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 6.
+The -t option is QFN32.
+The -d option is LCMXO2-1200HC.
+Using package QFN32.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-1200HC
+
+### Package : QFN32
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = PulseController.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/scott/Documents/PulseController (searchpath added)
+-p C:/lscc/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/scott/Documents/PulseController/impl1 (searchpath added)
+-p C:/Users/scott/Documents/PulseController (searchpath added)
+Verilog design file = C:/Users/scott/Documents/PulseController/impl1/source/PulseController.v
+Verilog design file = C:/Users/scott/Documents/PulseController/efb.v
+NGD file = PulseController_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v. VERI-1482
+Analyzing Verilog file c:/users/scott/documents/pulsecontroller/efb.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): PulseController
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(143): " arg1="PulseController" arg2="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg3="143"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;3.02&quot;)" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/efb.v(8): " arg1="efb" arg2="c:/users/scott/documents/pulsecontroller/efb.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): " arg1="BB" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="82"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): " arg1="EFB(EFB_I2C1=&quot;ENABLED&quot;,EFB_TC_PORTMODE=&quot;WB&quot;,I2C1_SLAVE_ADDR=&quot;0b0001001&quot;,I2C2_SLAVE_ADDR=&quot;0b0001001&quot;,I2C1_CLK_DIVIDER=125,SPI_MODE=&quot;MASTER&quot;,TC_TOP_SEL=&quot;OFF&quot;,TC_OVERFLOW=&quot;DISABLED&quot;)" arg2="C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1800"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(53): " arg1="PulseIn(BITS=13)" arg2="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg3="53"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(101): " arg1="PulseOut(BITS=13)" arg2="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg3="101"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(124): " arg1="RevolutionCounter" arg2="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg3="124"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(137): " arg1="revcount" arg2="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg3="137"  />
+    <postMsg mid="35901466" type="Warning" dynamic="1" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(137): " arg1="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg2="137"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(409): " arg1="8" arg2="5" arg3="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg4="409"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(411): " arg1="8" arg2="5" arg3="c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v" arg4="411"  />
+Last elaborated design is PulseController()
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Preliminary    Version 1.42.
+Top-level module name = PulseController.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 000000000001
+
+ 0001 -> 000000000010
+
+ 0010 -> 000000000100
+
+ 0011 -> 000000001000
+
+ 0100 -> 000000010000
+
+ 0101 -> 000000100000
+
+ 0110 -> 000001000000
+
+ 0111 -> 000010000000
+
+ 1000 -> 000100000000
+
+ 1001 -> 001000000000
+
+ 1010 -> 010000000000
+
+ 1011 -> 100000000000
+
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="wb_adr_i"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="wb_adr_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="wb_adr_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="wb_adr_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="wb_adr_i"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="scl"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="sda"  />
+GSR instance connected to net rst_c.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in PulseController_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    534 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file PulseController_impl1.ngd.
+
+################### Begin Area Report (PulseController)######################
+Number of register bits => 291 of 1346 (21 % )
+BB => 2
+CCU2D => 56
+EFB => 1
+FD1P3AX => 116
+FD1P3IX => 12
+FD1P3JX => 1
+FD1S3AX => 148
+FD1S3IX => 13
+FD1S3JX => 1
+GSR => 1
+IB => 7
+LUT4 => 163
+OB => 3
+OSCH => 1
+PFUMX => 6
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : clk, loads : 284
+  Net : i_rev_pulse_c, loads : 8
+  Net : i2c1_scli, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 13
+Top 10 highest fanout Clock Enables:
+  Net : clk_enable_44, loads : 26
+  Net : a0_pulsein/o_pw_12__N_220, loads : 13
+  Net : a1_pulsein/o_pw_12__N_220, loads : 13
+  Net : a4_pulsein/o_pw_12__N_220, loads : 12
+  Net : a3_pulsein/o_pw_12__N_220, loads : 12
+  Net : a2_pulsein/o_pw_12__N_220, loads : 12
+  Net : clk_enable_67, loads : 8
+  Net : clk_enable_20, loads : 8
+  Net : clk_enable_56, loads : 8
+  Net : clk_enable_49, loads : 5
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n775, loads : 31
+  Net : count_2, loads : 29
+  Net : count_1, loads : 29
+  Net : o_select_indicator_c, loads : 28
+  Net : clk_enable_44, loads : 26
+  Net : count_0, loads : 20
+  Net : n777, loads : 20
+  Net : a1_pulsein/signal, loads : 16
+  Net : a0_pulsein/signal, loads : 16
+  Net : revcounter/n3230, loads : 15
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets i_rev_pulse_c]           |  200.000 MHz|  274.198 MHz|     6  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |  200.000 MHz|  128.518 MHz|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 58.887  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.078  secs
+--------------------------------------------------------------
+
 map -a "MachXO2" -p LCMXO2-1200HC -t QFN32 -s 6 -oc Industrial   "PulseController_impl1.ngd" -o "PulseController_impl1_map.ncd" -pr "PulseController_impl1.prf" -mp "PulseController_impl1.mrp" -lpf "C:/Users/scott/Documents/PulseController/impl1/PulseController_impl1.lpf" -lpf "C:/Users/scott/Documents/PulseController/PulseController.lpf"  -c 0           
 map:  version Diamond (64-bit) 3.12.0.240.2
 
@@ -33,21 +278,21 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    283 out of  1346 (21%)
-      PFU registers:          283 out of  1280 (22%)
+   Number of registers:    291 out of  1346 (22%)
+      PFU registers:          291 out of  1280 (23%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       152 out of   640 (24%)
-      SLICEs as Logic/ROM:    152 out of   640 (24%)
+   Number of SLICEs:       157 out of   640 (25%)
+      SLICEs as Logic/ROM:    157 out of   640 (25%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         51 out of   640 (8%)
-   Number of LUT4s:        255 out of  1280 (20%)
-      Number used as logic LUTs:        153
+      SLICEs as Carry:         56 out of   640 (9%)
+   Number of LUT4s:        274 out of  1280 (21%)
+      Number used as logic LUTs:        162
       Number used as distributed RAM:     0
-      Number used as ripple logic:      102
+      Number used as ripple logic:      112
       Number used as shift registers:     0
-   Number of PIO sites used: 11 + 4(JTAG) out of 22 (68%)
+   Number of PIO sites used: 12 + 4(JTAG) out of 22 (73%)
    Number of block RAMs:  0 out of 7 (0%)
-   Number of GSRs:        0 out of 1 (0%)
+   Number of GSRs:        1 out of 1 (100%)
    EFB used :        Yes
    JTAG used :       No
    Readback used :   No
@@ -68,38 +313,39 @@ Design Summary:
    Notes:-
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  2
-     Net clk: 151 loads, 151 rising, 0 falling (Driver: internal_oscillator )
+   Number of clocks:  3
+     Net clk: 150 loads, 150 rising, 0 falling (Driver: internal_oscillator )
      Net i2c1_scli: 1 loads, 1 rising, 0 falling (Driver: PIO scl )
+     Net i_rev_pulse_c: 5 loads, 5 rising, 0 falling (Driver: PIO i_rev_pulse )
    Number of Clock Enables:  13
-     Net clk_enable_56: 2 loads, 2 LSLICEs
-     Net clk_enable_54: 4 loads, 4 LSLICEs
-     Net clk_enable_18: 4 loads, 4 LSLICEs
-     Net n775: 4 loads, 4 LSLICEs
-     Net clk_enable_42: 13 loads, 13 LSLICEs
+     Net clk_enable_58: 2 loads, 2 LSLICEs
+     Net clk_enable_56: 4 loads, 4 LSLICEs
+     Net clk_enable_49: 3 loads, 3 LSLICEs
+     Net n783: 4 loads, 4 LSLICEs
+     Net clk_enable_44: 13 loads, 13 LSLICEs
+     Net clk_enable_20: 4 loads, 4 LSLICEs
      Net a4_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-     Net clk_enable_47: 3 loads, 3 LSLICEs
-     Net clk_enable_11: 3 loads, 3 LSLICEs
-     Net a3_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_13: 3 loads, 3 LSLICEs
      Net a1_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
-     Net clk_enable_65: 7 loads, 7 LSLICEs
+     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_67: 6 loads, 6 LSLICEs
+     Net a3_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
      Net a0_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
    Number of LSRs:  6
-     Net n2162: 2 loads, 2 LSLICEs
-     Net n2165: 3 loads, 3 LSLICEs
+     Net n2267: 2 loads, 2 LSLICEs
      Net rst_c: 9 loads, 8 LSLICEs
+     Net n2272: 2 loads, 2 LSLICEs
      Net a1_pulsein/high: 1 loads, 1 LSLICEs
-     Net n2166: 4 loads, 4 LSLICEs
+     Net n2268: 4 loads, 4 LSLICEs
      Net a0_pulsein/high: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net n767: 31 loads
-     Net count_2: 28 loads
+     Net n775: 31 loads
+     Net count_1: 29 loads
+     Net count_2: 29 loads
      Net o_select_indicator_c: 28 loads
-     Net count_1: 25 loads
      Net count_0: 20 loads
-     Net n769: 18 loads
+     Net n777: 20 loads
      Net a0_pulsein/signal: 16 loads
      Net a1_pulsein/signal: 16 loads
      Net a2_pulsein/signal: 15 loads
@@ -130,7 +376,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "PulseController_impl1_map.ncd"
-Fri Mar 26 00:02:19 2021
+Sun Mar 28 23:42:37 2021
 
 PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/scott/Documents/PulseController/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 PulseController_impl1_map.ncd PulseController_impl1.dir/5_1.ncd PulseController_impl1.prf
@@ -154,58 +400,63 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   11+4(JTAG)/108     14% used
-                  11+4(JTAG)/22      68% bonded
+   PIO (prelim)   12+4(JTAG)/108     15% used
+                  12+4(JTAG)/22      73% bonded
 
-   SLICE            152/640          23% used
+   SLICE            157/640          24% used
 
+   GSR                1/1           100% used
    OSC                1/1           100% used
    EFB                1/1           100% used
 
 
-Number of Signals: 585
-Number of Connections: 1326
+Number of Signals: 617
+Number of Connections: 1377
 
 Pin Constraint Summary:
-   9 out of 11 pins locked (81% locked).
+   10 out of 12 pins locked (83% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    clk (driver: internal_oscillator, clk load #: 151)
+    clk (driver: internal_oscillator, clk load #: 150)
 
 
-The following 1 signal is selected to use the secondary clock routing resources:
-    clk_enable_42 (driver: SLICE_181, clk load #: 0, sr load #: 0, ce load #: 13)
+The following 2 signals are selected to use the secondary clock routing resources:
+    clk_enable_44 (driver: SLICE_189, clk load #: 0, sr load #: 0, ce load #: 13)
+    i_rev_pulse_c (driver: i_rev_pulse, clk load #: 5, sr load #: 0, ce load #: 0)
 
-No signal is selected as Global Set/Reset.
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="i_rev_pulse_c" arg1="Secondary" arg2="i_rev_pulse" arg3="14" arg4="Secondary"  />
+Signal rst_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
 ....................
-Placer score = 63984.
-Finished Placer Phase 1.  REAL time: 5 secs 
+Placer score = 66694.
+Finished Placer Phase 1.  REAL time: 6 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  63592
-Finished Placer Phase 2.  REAL time: 5 secs 
+Placer score =  66267
+Finished Placer Phase 2.  REAL time: 6 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clock Resources:
   CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 108 (0%)
   PLL        : 0 out of 1 (0%)
   DCM        : 0 out of 2 (0%)
   DCC        : 0 out of 8 (0%)
 
 Global Clocks:
-  PRIMARY "clk" from OSC on comp "internal_oscillator" on site "OSC", clk load = 151
-  SECONDARY "clk_enable_42" from F1 on comp "SLICE_181" on site "R7C12A", clk load = 0, ce load = 13, sr load = 0
+  PRIMARY "clk" from OSC on comp "internal_oscillator" on site "OSC", clk load = 150
+  SECONDARY "clk_enable_44" from F0 on comp "SLICE_189" on site "R7C12D", clk load = 0, ce load = 13, sr load = 0
+  SECONDARY "i_rev_pulse_c" from comp "i_rev_pulse" on PIO site "14 (PB11B)", clk load = 5, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
-  SECONDARY: 1 out of 8 (12%)
+  SECONDARY: 2 out of 8 (25%)
 
 Edge Clocks:
   No edge clock selected.
@@ -214,9 +465,9 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   11 + 4(JTAG) out of 108 (13.9%) PIO sites used.
-   11 + 4(JTAG) out of 22 (68.2%) bonded PIO sites used.
-   Number of PIO comps: 11; differential: 0.
+   12 + 4(JTAG) out of 108 (14.8%) PIO sites used.
+   12 + 4(JTAG) out of 22 (72.7%) bonded PIO sites used.
+   Number of PIO comps: 12; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
@@ -225,7 +476,7 @@ I/O Bank Usage Summary:
 +----------+--------------+------------+-----------+
 | 0        | 5 / 9 ( 55%) | 3.3V       | -         |
 | 1        | 2 / 2 (100%) | 3.3V       | -         |
-| 2        | 4 / 9 ( 44%) | 3.3V       | -         |
+| 2        | 5 / 9 ( 55%) | 3.3V       | -         |
 | 3        | 0 / 2 (  0%) | 3.3V       | -         |
 +----------+--------------+------------+-----------+
 
@@ -233,12 +484,12 @@ Total placer CPU time: 5 secs
 
 Dumping design to file PulseController_impl1.dir/5_1.ncd.
 
-0 connections routed; 1326 unrouted.
+0 connections routed; 1377 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 6 secs 
+Completed router resource preassignment. Real time: 7 secs 
 
-Start NBR router at 00:02:25 03/26/21
+Start NBR router at 23:42:44 03/28/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -253,38 +504,41 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 00:02:25 03/26/21
+Start NBR special constraint process at 23:42:44 03/28/21
 
-Start NBR section for initial routing at 00:02:25 03/26/21
+Start NBR section for initial routing at 23:42:44 03/28/21
 Level 4, iteration 1
-75(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.118ns/0.000ns; real time: 6 secs 
+97(0.11%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 323.170ns/0.000ns; real time: 7 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 00:02:25 03/26/21
+Start NBR section for normal routing at 23:42:44 03/28/21
 Level 4, iteration 1
-51(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.118ns/0.000ns; real time: 6 secs 
+57(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 7 secs 
 Level 4, iteration 2
-10(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.112ns/0.000ns; real time: 6 secs 
+14(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 7 secs 
 Level 4, iteration 3
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.112ns/0.000ns; real time: 6 secs 
+7(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 7 secs 
 Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 7 secs 
+Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.112ns/0.000ns; real time: 6 secs 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 7 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 00:02:25 03/26/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:42:44 03/28/21
 
-Start NBR section for re-routing at 00:02:26 03/26/21
+Start NBR section for re-routing at 23:42:45 03/28/21
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 321.112ns/0.000ns; real time: 7 secs 
+Estimated worst slack/total negative slack<setup>: 321.241ns/0.000ns; real time: 8 secs 
 
-Start NBR section for post-routing at 00:02:26 03/26/21
+Start NBR section for post-routing at 23:42:45 03/28/21
 
 End NBR router with 0 unrouted connection
 
@@ -292,17 +546,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 321.112ns
+  Estimated worst slack<setup> : 321.241ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 6 secs 
-Total REAL time: 7 secs 
+Total CPU time 7 secs 
+Total REAL time: 8 secs 
 Completely routed.
-End of route.  1326 routed (100.00%); 0 unrouted.
+End of route.  1377 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -313,14 +567,14 @@ Dumping design to file PulseController_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 321.112
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 321.241
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.299
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 6 secs 
-Total REAL time to completion: 7 secs 
+Total CPU  time to completion: 7 secs 
+Total REAL time to completion: 8 secs 
 
 par done!
 
@@ -357,7 +611,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Fri Mar 26 00:02:27 2021
+Sun Mar 28 23:42:46 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -397,11 +651,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3015 paths, 1 nets, and 1306 connections (98.49% coverage)
+Constraints cover 3026 paths, 1 nets, and 1324 connections (96.15% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Fri Mar 26 00:02:27 2021
+Sun Mar 28 23:42:46 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -441,7 +695,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3015 paths, 1 nets, and 1306 connections (98.49% coverage)
+Constraints cover 3026 paths, 1 nets, and 1324 connections (96.15% coverage)
 
 
 
@@ -547,4 +801,4 @@ Initialized UFM Pages:                     0 Page.
  
 Total CPU Time: 2 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 253 MB
+Peak Memory Usage: 254 MB

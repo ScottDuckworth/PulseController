@@ -121,6 +121,25 @@ module PulseOut #(
 
 endmodule
 
+module RevolutionCounter #(
+	parameter BITS = 8
+)(
+	input wire rst,
+	input wire i_pulse,
+	output wire [BITS-1:0] o_revcount
+);
+
+	reg [BITS-1:0] revcount;
+	
+	assign o_revcount = revcount;
+	
+	always @(posedge i_pulse or negedge rst) begin
+		revcount <= revcount + 1'b1;
+		if (~rst) revcount <= 1'b0;
+	end
+
+endmodule
+
 module PulseController(
 	inout wire scl,
 	inout wire sda,
@@ -130,6 +149,7 @@ module PulseController(
 	input wire i_a2_pwm,
 	input wire i_a3_pwm,
 	input wire i_a4_pwm,
+	input wire i_rev_pulse,
 	output wire o_select_indicator,
 	output wire o_y0_pwm,
 	output wire o_y1_pwm
@@ -180,6 +200,8 @@ module PulseController(
 	reg  [PWM_BITS-1:0] b0_pw, b1_pw;
 	// The pulse width (measured in clk cycles) of the Y output channels.
 	reg  [PWM_BITS-1:0] y0_pw, y1_pw;
+	// The revolution counter.
+	wire [7:0] revcount;
 	
 	// Logical aliases.
 	assign a2_on = a2_pw >= pulse_switch_threshold;
@@ -254,6 +276,12 @@ module PulseController(
 		.i_pw(y1_pw),
 		.i_pulse(a1_rise),
 		.o_signal(o_y1_pwm)
+	);
+	
+	RevolutionCounter revcounter (
+		.rst(rst),
+		.i_pulse(i_rev_pulse),
+		.o_revcount(revcount)
 	);
 	
 	always @(posedge clk) begin
@@ -352,12 +380,13 @@ module PulseController(
 					2: wb_dat_i <= i2c_pw0[7:0];
 					3: wb_dat_i <= i2c_pw1[PWM_BITS-1:8];
 					4: wb_dat_i <= i2c_pw1[7:0];
+					5: wb_dat_i <= revcount;
 				endcase
 				
 				if (wb_ack_o && wb_cyc_i) begin
 					wb_cyc_i <= 1'b0;
 					count <= count + 1'b1;
-					state <= count == 4 ? state_i2c_nack : state_i2c_read_trrdy;
+					state <= count == 5 ? state_i2c_nack : state_i2c_read_trrdy;
 				end
 			end
 			

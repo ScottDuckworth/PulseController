@@ -26,10 +26,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(124): </Dynamic>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(143): </Dynamic>
             <Dynamic>PulseController</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>143</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -96,22 +96,45 @@
             <Navigation>101</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(380): </Dynamic>
-            <Dynamic>8</Dynamic>
-            <Dynamic>5</Dynamic>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(124): </Dynamic>
+            <Dynamic>RevolutionCounter</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>380</Navigation>
+            <Navigation>124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(137): </Dynamic>
+            <Dynamic>revcount</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>137</Navigation>
+        </Message>
+        <Message>
+            <ID>35901466</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(137): </Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>137</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(382): </Dynamic>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(409): </Dynamic>
             <Dynamic>8</Dynamic>
             <Dynamic>5</Dynamic>
             <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
-            <Navigation>382</Navigation>
+            <Navigation>409</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v(411): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>c:/users/scott/documents/pulsecontroller/impl1/source/pulsecontroller.v</Navigation>
+            <Navigation>411</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>
@@ -162,6 +185,17 @@
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_rev_pulse_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>i_rev_pulse</Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>Secondary</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

@@ -15,26 +15,26 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-1200HCQFN32
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  03/26/21  00:02:18
+Mapped on:  03/28/21  23:42:36
 
 Design Summary
 --------------
 
-   Number of registers:    283 out of  1346 (21%)
-      PFU registers:          283 out of  1280 (22%)
+   Number of registers:    291 out of  1346 (22%)
+      PFU registers:          291 out of  1280 (23%)
       PIO registers:            0 out of    66 (0%)
-   Number of SLICEs:       152 out of   640 (24%)
-      SLICEs as Logic/ROM:    152 out of   640 (24%)
+   Number of SLICEs:       157 out of   640 (25%)
+      SLICEs as Logic/ROM:    157 out of   640 (25%)
       SLICEs as RAM:            0 out of   480 (0%)
-      SLICEs as Carry:         51 out of   640 (8%)
-   Number of LUT4s:        255 out of  1280 (20%)
-      Number used as logic LUTs:        153
+      SLICEs as Carry:         56 out of   640 (9%)
+   Number of LUT4s:        274 out of  1280 (21%)
+      Number used as logic LUTs:        162
       Number used as distributed RAM:     0
-      Number used as ripple logic:      102
+      Number used as ripple logic:      112
       Number used as shift registers:     0
-   Number of PIO sites used: 11 + 4(JTAG) out of 22 (68%)
+   Number of PIO sites used: 12 + 4(JTAG) out of 22 (73%)
    Number of block RAMs:  0 out of 7 (0%)
-   Number of GSRs:        0 out of 1 (0%)
+   Number of GSRs:        1 out of 1 (100%)
    EFB used :        Yes
    JTAG used :       No
    Readback used :   No
@@ -57,8 +57,8 @@ Design Summary
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  2
-     Net clk: 151 loads, 151 rising, 0 falling (Driver: internal_oscillator )
+   Number of clocks:  3
+     Net clk: 150 loads, 150 rising, 0 falling (Driver: internal_oscillator )
      Net i2c1_scli: 1 loads, 1 rising, 0 falling (Driver: PIO scl )
 
                                     Page 1
@@ -66,39 +66,40 @@ Design Summary
 
 
 
-Design:  PulseController                               Date:  03/26/21  00:02:18
+Design:  PulseController                               Date:  03/28/21  23:42:36
 
 Design Summary (cont)
 ---------------------
+     Net i_rev_pulse_c: 5 loads, 5 rising, 0 falling (Driver: PIO i_rev_pulse )
    Number of Clock Enables:  13
-     Net clk_enable_56: 2 loads, 2 LSLICEs
-     Net clk_enable_54: 4 loads, 4 LSLICEs
-     Net clk_enable_18: 4 loads, 4 LSLICEs
-     Net n775: 4 loads, 4 LSLICEs
-     Net clk_enable_42: 13 loads, 13 LSLICEs
+     Net clk_enable_58: 2 loads, 2 LSLICEs
+     Net clk_enable_56: 4 loads, 4 LSLICEs
+     Net clk_enable_49: 3 loads, 3 LSLICEs
+     Net n783: 4 loads, 4 LSLICEs
+     Net clk_enable_44: 13 loads, 13 LSLICEs
+     Net clk_enable_20: 4 loads, 4 LSLICEs
      Net a4_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-     Net clk_enable_47: 3 loads, 3 LSLICEs
-     Net clk_enable_11: 3 loads, 3 LSLICEs
-     Net a3_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
-     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_13: 3 loads, 3 LSLICEs
      Net a1_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
-     Net clk_enable_65: 7 loads, 7 LSLICEs
+     Net a2_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
+     Net clk_enable_67: 6 loads, 6 LSLICEs
+     Net a3_pulsein/o_pw_12__N_220: 6 loads, 6 LSLICEs
      Net a0_pulsein/o_pw_12__N_220: 7 loads, 7 LSLICEs
    Number of LSRs:  6
-     Net n2162: 2 loads, 2 LSLICEs
-     Net n2165: 3 loads, 3 LSLICEs
+     Net n2267: 2 loads, 2 LSLICEs
      Net rst_c: 9 loads, 8 LSLICEs
+     Net n2272: 2 loads, 2 LSLICEs
      Net a1_pulsein/high: 1 loads, 1 LSLICEs
-     Net n2166: 4 loads, 4 LSLICEs
+     Net n2268: 4 loads, 4 LSLICEs
      Net a0_pulsein/high: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net n767: 31 loads
-     Net count_2: 28 loads
+     Net n775: 31 loads
+     Net count_1: 29 loads
+     Net count_2: 29 loads
      Net o_select_indicator_c: 28 loads
-     Net count_1: 25 loads
      Net count_0: 20 loads
-     Net n769: 18 loads
+     Net n777: 20 loads
      Net a0_pulsein/signal: 16 loads
      Net a1_pulsein/signal: 16 loads
      Net a2_pulsein/signal: 15 loads
@@ -125,26 +126,28 @@ IO (PIO) Attributes
 -------------------
 
 +---------------------+-----------+-----------+------------+
-| IO Name             | Direction | Levelmode | IO         |
 
                                     Page 2
 
 
 
 
-Design:  PulseController                               Date:  03/26/21  00:02:18
+Design:  PulseController                               Date:  03/28/21  23:42:36
 
 IO (PIO) Attributes (cont)
 --------------------------
+| IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| i_a2_pwm            | INPUT     | LVCMOS33  |            |
+| i_a3_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | sda                 | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | scl                 | BIDIR     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| i_a3_pwm            | INPUT     | LVCMOS33  |            |
+| i_a2_pwm            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| i_a4_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | i_a1_pwm            | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -158,39 +161,36 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | o_select_indicator  | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| i_a4_pwm            | INPUT     | LVCMOS33  |            |
+| i_rev_pulse         | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal rst_N_18 was merged into signal rst_c
-Signal clk_enable_67 was merged into signal n775
+Signal n3230 was merged into signal rst_c
+Signal clk_enable_66 was merged into signal n783
 Signal GND_net undriven or does not drive anything - clipped.
-Signal a0_pulsein/count_498_add_4_1/S0 undriven or does not drive anything -
+Signal y1_pulseout/count_523_add_4_15/S1 undriven or does not drive anything -
      clipped.
-Signal a0_pulsein/count_498_add_4_1/CI undriven or does not drive anything -
+Signal y1_pulseout/count_523_add_4_15/CO undriven or does not drive anything -
      clipped.
-Signal a0_pulsein/count_498_add_4_13/CO undriven or does not drive anything -
+Signal y1_pulseout/count_523_add_4_1/S1 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/count_503_add_4_15/S1 undriven or does not drive anything -
+Signal y1_pulseout/count_523_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/count_503_add_4_15/CO undriven or does not drive anything -
+Signal y1_pulseout/count_523_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/count_503_add_4_1/S1 undriven or does not drive anything -
+Signal y0_pulseout/count_522_add_4_1/S1 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/count_503_add_4_1/S0 undriven or does not drive anything -
+Signal y0_pulseout/count_522_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal y0_pulseout/count_503_add_4_1/CI undriven or does not drive anything -
+Signal y0_pulseout/count_522_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a1_pulsein/count_499_add_4_13/CO undriven or does not drive anything -
+Signal y0_pulseout/count_522_add_4_15/S1 undriven or does not drive anything -
      clipped.
-Signal a1_pulsein/count_499_add_4_1/S0 undriven or does not drive anything -
+Signal y0_pulseout/count_522_add_4_15/CO undriven or does not drive anything -
      clipped.
-Signal a1_pulsein/count_499_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal a2_pulsein/count_500_add_4_1/S0 undriven or does not drive anything -
+Signal a0_pulsein/count_517_add_4_1/S0 undriven or does not drive anything -
      clipped.
 
                                     Page 3
@@ -198,38 +198,48 @@ Signal a2_pulsein/count_500_add_4_1/S0 undriven or does not drive anything -
 
 
 
-Design:  PulseController                               Date:  03/26/21  00:02:18
+Design:  PulseController                               Date:  03/28/21  23:42:36
 
 Removed logic (cont)
 --------------------
-Signal a2_pulsein/count_500_add_4_1/CI undriven or does not drive anything -
+Signal a0_pulsein/count_517_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a2_pulsein/count_500_add_4_13/CO undriven or does not drive anything -
+Signal a0_pulsein/count_517_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal a3_pulsein/count_501_add_4_1/S0 undriven or does not drive anything -
+Signal a3_pulsein/count_520_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal a3_pulsein/count_501_add_4_1/CI undriven or does not drive anything -
+Signal a3_pulsein/count_520_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a3_pulsein/count_501_add_4_13/CO undriven or does not drive anything -
+Signal a3_pulsein/count_520_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal a4_pulsein/count_502_add_4_1/S0 undriven or does not drive anything -
+Signal revcounter/dff_6_524_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal a4_pulsein/count_502_add_4_1/CI undriven or does not drive anything -
+Signal revcounter/dff_6_524_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal a4_pulsein/count_502_add_4_13/CO undriven or does not drive anything -
+Signal revcounter/dff_6_524_add_4_9/S1 undriven or does not drive anything -
      clipped.
-Signal y1_pulseout/count_504_add_4_1/S1 undriven or does not drive anything -
+Signal revcounter/dff_6_524_add_4_9/CO undriven or does not drive anything -
      clipped.
-Signal y1_pulseout/count_504_add_4_1/S0 undriven or does not drive anything -
+Signal a2_pulsein/count_519_add_4_1/S0 undriven or does not drive anything -
      clipped.
-Signal y1_pulseout/count_504_add_4_1/CI undriven or does not drive anything -
+Signal a2_pulsein/count_519_add_4_1/CI undriven or does not drive anything -
      clipped.
-Signal y1_pulseout/count_504_add_4_15/S1 undriven or does not drive anything -
+Signal a2_pulsein/count_519_add_4_13/CO undriven or does not drive anything -
      clipped.
-Signal y1_pulseout/count_504_add_4_15/CO undriven or does not drive anything -
+Signal a1_pulsein/count_518_add_4_13/CO undriven or does not drive anything -
      clipped.
-Block rst_I_0_1_lut was optimized away.
-Block i962_1_lut_rep_21 was optimized away.
+Signal a1_pulsein/count_518_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal a1_pulsein/count_518_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal a4_pulsein/count_521_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal a4_pulsein/count_521_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal a4_pulsein/count_521_add_4_13/CO undriven or does not drive anything -
+     clipped.
+Block revcounter/rst_I_0_1_lut_rep_30 was optimized away.
+Block i1029_1_lut_rep_21 was optimized away.
 Block i1 was optimized away.
 
      
@@ -248,6 +258,16 @@ Embedded Functional Block Connection Summary
 --------------------------------------------
 
    Desired WISHBONE clock frequency: 50.0 MHz
+
+                                    Page 4
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+Embedded Functional Block Connection Summary (cont)
+---------------------------------------------------
    Clock source:                     clk
    Reset source:                     rst_c
    Functions mode:
@@ -258,16 +278,6 @@ Embedded Functional Block Connection Summary
       Timer/Counter Mode:            WB
       UFM Connection:                DISABLED
       PLL0 Connection:               DISABLED
-
-                                    Page 4
-
-
-
-
-Design:  PulseController                               Date:  03/26/21  00:02:18
-
-Embedded Functional Block Connection Summary (cont)
----------------------------------------------------
       PLL1 Connection:               DISABLED
    I2C Function Summary:
    --------------------
@@ -308,6 +318,374 @@ Instance Name: internal_oscillator
 Instance Name: efb/EFBInst_0
          Type: EFB
 
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_c'.
+
+                                    Page 5
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 283 
+
+     Type and instance name of component: 
+   Register : state_FSM_i5
+   Register : state_FSM_i4
+   Register : state_FSM_i3
+   Register : state_FSM_i2
+   Register : y1_pw_i0
+   Register : count__i0
+   Register : i2c_pw0_i0_i0
+   Register : wb_we_i_112
+   Register : b0_pw_i0_i0
+   Register : b1_pw_i0_i0
+   Register : i2c_pw1_i0
+   Register : y0_pw_i0
+   Register : a4_pulsein/count_521__i0
+   Register : a4_pulsein/pw__i1
+   Register : a4_pulsein/signal_sync1_19
+   Register : a4_pulsein/signal_20
+   Register : a4_pulsein/high_21
+   Register : a4_pulsein/signal_sync0_18
+   Register : a4_pulsein/pw__i12
+   Register : a4_pulsein/pw__i11
+   Register : a4_pulsein/pw__i10
+   Register : a4_pulsein/pw__i9
+   Register : a4_pulsein/pw__i8
+   Register : a4_pulsein/pw__i7
+   Register : a4_pulsein/pw__i6
+   Register : a4_pulsein/pw__i5
+   Register : a4_pulsein/pw__i4
+   Register : a4_pulsein/pw__i3
+   Register : a4_pulsein/pw__i2
+   Register : a4_pulsein/count_521__i12
+   Register : a4_pulsein/count_521__i11
+   Register : a4_pulsein/count_521__i10
+   Register : a4_pulsein/count_521__i9
+   Register : a4_pulsein/count_521__i8
+   Register : a4_pulsein/count_521__i7
+   Register : a4_pulsein/count_521__i6
+   Register : a4_pulsein/count_521__i5
+   Register : a4_pulsein/count_521__i4
+
+                                    Page 6
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+   Register : a4_pulsein/count_521__i3
+   Register : a4_pulsein/count_521__i2
+   Register : a4_pulsein/count_521__i1
+   Register : wb_adr_i__i1
+   Register : wb_cyc_i_111
+   Register : state_FSM_i1
+   Register : wb_adr_i__i2
+   Register : y0_pw_i12
+   Register : y0_pw_i11
+   Register : y0_pw_i10
+   Register : y0_pw_i9
+   Register : y0_pw_i8
+   Register : y0_pw_i7
+   Register : y0_pw_i6
+   Register : y0_pw_i5
+   Register : y0_pw_i4
+   Register : y0_pw_i3
+   Register : y0_pw_i2
+   Register : y0_pw_i1
+   Register : i2c_pw1_i12
+   Register : i2c_pw1_i11
+   Register : i2c_pw1_i10
+   Register : i2c_pw1_i9
+   Register : i2c_pw1_i8
+   Register : i2c_pw1_i7
+   Register : i2c_pw1_i6
+   Register : i2c_pw1_i5
+   Register : i2c_pw1_i4
+   Register : i2c_pw1_i3
+   Register : i2c_pw1_i2
+   Register : i2c_pw1_i1
+   Register : b1_pw_i0_i12
+   Register : b1_pw_i0_i11
+   Register : b1_pw_i0_i10
+   Register : b1_pw_i0_i9
+   Register : b1_pw_i0_i8
+   Register : b1_pw_i0_i7
+   Register : b1_pw_i0_i6
+   Register : b1_pw_i0_i5
+   Register : b1_pw_i0_i4
+   Register : b1_pw_i0_i3
+   Register : b1_pw_i0_i2
+   Register : b1_pw_i0_i1
+   Register : b0_pw_i0_i12
+   Register : b0_pw_i0_i11
+   Register : b0_pw_i0_i10
+   Register : b0_pw_i0_i9
+   Register : b0_pw_i0_i8
+   Register : b0_pw_i0_i7
+   Register : b0_pw_i0_i6
+   Register : b0_pw_i0_i5
+   Register : b0_pw_i0_i4
+   Register : b0_pw_i0_i3
+   Register : b0_pw_i0_i2
+   Register : b0_pw_i0_i1
+   Register : i2c_pw0_i0_i12
+
+                                    Page 7
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+   Register : i2c_pw0_i0_i11
+   Register : i2c_pw0_i0_i10
+   Register : i2c_pw0_i0_i9
+   Register : i2c_pw0_i0_i8
+   Register : i2c_pw0_i0_i7
+   Register : i2c_pw0_i0_i6
+   Register : i2c_pw0_i0_i5
+   Register : i2c_pw0_i0_i4
+   Register : i2c_pw0_i0_i3
+   Register : i2c_pw0_i0_i2
+   Register : i2c_pw0_i0_i1
+   Register : count__i2
+   Register : count__i1
+   Register : y1_pw_i12
+   Register : y1_pw_i11
+   Register : y1_pw_i10
+   Register : y1_pw_i9
+   Register : y1_pw_i8
+   Register : y1_pw_i7
+   Register : y1_pw_i6
+   Register : y1_pw_i5
+   Register : y1_pw_i4
+   Register : y1_pw_i3
+   Register : y1_pw_i2
+   Register : y1_pw_i1
+   Register : state_FSM_i6
+   Register : state_FSM_i7
+   Register : state_FSM_i8
+   Register : state_FSM_i9
+   Register : state_FSM_i10
+   Register : state_FSM_i11
+   Register : state_FSM_i12
+   Register : a1_pulsein/pw_i0_i0
+   Register : a1_pulsein/signal_sync1_19
+   Register : a1_pulsein/signal_20
+   Register : a1_pulsein/high_21
+   Register : a1_pulsein/signal_sync0_18
+   Register : a1_pulsein/rise_22
+   Register : a1_pulsein/count_518__i0
+   Register : a1_pulsein/pw_i0_i12
+   Register : a1_pulsein/pw_i0_i11
+   Register : a1_pulsein/pw_i0_i10
+   Register : a1_pulsein/pw_i0_i9
+   Register : a1_pulsein/pw_i0_i8
+   Register : a1_pulsein/pw_i0_i7
+   Register : a1_pulsein/pw_i0_i6
+   Register : a1_pulsein/pw_i0_i5
+   Register : a1_pulsein/pw_i0_i4
+   Register : a1_pulsein/pw_i0_i3
+   Register : a1_pulsein/pw_i0_i2
+   Register : a1_pulsein/pw_i0_i1
+   Register : a1_pulsein/count_518__i1
+   Register : a1_pulsein/count_518__i2
+   Register : a1_pulsein/count_518__i3
+   Register : a1_pulsein/count_518__i4
+   Register : a1_pulsein/count_518__i5
+
+                                    Page 8
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+   Register : a1_pulsein/count_518__i6
+   Register : a1_pulsein/count_518__i7
+   Register : a1_pulsein/count_518__i8
+   Register : a1_pulsein/count_518__i9
+   Register : a1_pulsein/count_518__i10
+   Register : a1_pulsein/count_518__i11
+   Register : a1_pulsein/count_518__i12
+   Register : a2_pulsein/pw__i1
+   Register : a2_pulsein/signal_sync1_19
+   Register : a2_pulsein/signal_20
+   Register : a2_pulsein/high_21
+   Register : a2_pulsein/signal_sync0_18
+   Register : a2_pulsein/count_519__i0
+   Register : a2_pulsein/pw__i12
+   Register : a2_pulsein/pw__i11
+   Register : a2_pulsein/pw__i10
+   Register : a2_pulsein/pw__i9
+   Register : a2_pulsein/pw__i8
+   Register : a2_pulsein/pw__i7
+   Register : a2_pulsein/pw__i6
+   Register : a2_pulsein/pw__i5
+   Register : a2_pulsein/pw__i4
+   Register : a2_pulsein/pw__i3
+   Register : a2_pulsein/pw__i2
+   Register : a2_pulsein/count_519__i1
+   Register : a2_pulsein/count_519__i2
+   Register : a2_pulsein/count_519__i3
+   Register : a2_pulsein/count_519__i4
+   Register : a2_pulsein/count_519__i5
+   Register : a2_pulsein/count_519__i6
+   Register : a2_pulsein/count_519__i7
+   Register : a2_pulsein/count_519__i8
+   Register : a2_pulsein/count_519__i9
+   Register : a2_pulsein/count_519__i10
+   Register : a2_pulsein/count_519__i11
+   Register : a2_pulsein/count_519__i12
+   Register : a3_pulsein/pw__i1
+   Register : a3_pulsein/signal_sync1_19
+   Register : a3_pulsein/signal_20
+   Register : a3_pulsein/high_21
+   Register : a3_pulsein/signal_sync0_18
+   Register : a3_pulsein/count_520__i0
+   Register : a3_pulsein/pw__i12
+   Register : a3_pulsein/pw__i11
+   Register : a3_pulsein/pw__i10
+   Register : a3_pulsein/pw__i9
+   Register : a3_pulsein/pw__i8
+   Register : a3_pulsein/pw__i7
+   Register : a3_pulsein/pw__i6
+   Register : a3_pulsein/pw__i5
+   Register : a3_pulsein/pw__i4
+   Register : a3_pulsein/pw__i3
+   Register : a3_pulsein/pw__i2
+   Register : a3_pulsein/count_520__i1
+   Register : a3_pulsein/count_520__i2
+   Register : a3_pulsein/count_520__i3
+
+                                    Page 9
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+   Register : a3_pulsein/count_520__i4
+   Register : a3_pulsein/count_520__i5
+   Register : a3_pulsein/count_520__i6
+   Register : a3_pulsein/count_520__i7
+   Register : a3_pulsein/count_520__i8
+   Register : a3_pulsein/count_520__i9
+   Register : a3_pulsein/count_520__i10
+   Register : a3_pulsein/count_520__i11
+   Register : a3_pulsein/count_520__i12
+   Register : wb_dat_i_i0_i7
+   Register : wb_dat_i_i0_i6
+   Register : wb_dat_i_i0_i5
+   Register : wb_dat_i_i0_i4
+   Register : wb_dat_i_i0_i3
+   Register : wb_dat_i_i0_i2
+   Register : wb_dat_i_i0_i1
+   Register : a0_pulsein/pw_i0_i0
+   Register : a0_pulsein/signal_sync1_19
+   Register : a0_pulsein/signal_20
+   Register : a0_pulsein/high_21
+   Register : a0_pulsein/signal_sync0_18
+   Register : a0_pulsein/rise_22
+   Register : a0_pulsein/count_517__i0
+   Register : a0_pulsein/pw_i0_i12
+   Register : a0_pulsein/pw_i0_i11
+   Register : a0_pulsein/pw_i0_i10
+   Register : a0_pulsein/pw_i0_i9
+   Register : a0_pulsein/pw_i0_i8
+   Register : a0_pulsein/pw_i0_i7
+   Register : a0_pulsein/pw_i0_i6
+   Register : a0_pulsein/pw_i0_i5
+   Register : a0_pulsein/pw_i0_i4
+   Register : a0_pulsein/pw_i0_i3
+   Register : a0_pulsein/pw_i0_i2
+   Register : a0_pulsein/pw_i0_i1
+   Register : a0_pulsein/count_517__i1
+   Register : a0_pulsein/count_517__i2
+   Register : a0_pulsein/count_517__i3
+   Register : a0_pulsein/count_517__i4
+   Register : a0_pulsein/count_517__i5
+   Register : a0_pulsein/count_517__i6
+   Register : a0_pulsein/count_517__i7
+   Register : a0_pulsein/count_517__i8
+   Register : a0_pulsein/count_517__i9
+   Register : a0_pulsein/count_517__i10
+   Register : a0_pulsein/count_517__i11
+   Register : a0_pulsein/count_517__i12
+   Register : wb_adr_i__i3
+   Register : wb_dat_i_i0_i0
+   Register : y0_pulseout/count_522__i0
+   Register : y0_pulseout/signal_11
+   Register : y0_pulseout/count_522__i12
+   Register : y0_pulseout/count_522__i11
+   Register : y0_pulseout/count_522__i10
+   Register : y0_pulseout/count_522__i9
+   Register : y0_pulseout/count_522__i8
+
+                                   Page 10
+
+
+
+
+Design:  PulseController                               Date:  03/28/21  23:42:36
+
+GSR Usage (cont)
+----------------
+   Register : y0_pulseout/count_522__i7
+   Register : y0_pulseout/count_522__i6
+   Register : y0_pulseout/count_522__i5
+   Register : y0_pulseout/count_522__i4
+   Register : y0_pulseout/count_522__i3
+   Register : y0_pulseout/count_522__i2
+   Register : y0_pulseout/count_522__i1
+   Register : y1_pulseout/signal_11
+   Register : y1_pulseout/count_523__i0
+   Register : y1_pulseout/count_523__i1
+   Register : y1_pulseout/count_523__i2
+   Register : y1_pulseout/count_523__i3
+   Register : y1_pulseout/count_523__i4
+   Register : y1_pulseout/count_523__i5
+   Register : y1_pulseout/count_523__i6
+   Register : y1_pulseout/count_523__i7
+   Register : y1_pulseout/count_523__i8
+   Register : y1_pulseout/count_523__i9
+   Register : y1_pulseout/count_523__i10
+   Register : y1_pulseout/count_523__i11
+   Register : y1_pulseout/count_523__i12
+
 Run Time and Memory Usage
 -------------------------
 
@@ -325,7 +703,25 @@ Run Time and Memory Usage
 
 
 
-                                    Page 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 11
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

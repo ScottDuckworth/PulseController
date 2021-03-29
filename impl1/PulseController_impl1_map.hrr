@@ -3,86 +3,96 @@ Report for cell PulseController
    Instance path: PulseController
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     152.00        100.0
-                                  LUT4	     153.00        100.0
-                                 IOBUF	         11        100.0
-                                PFUREG	        283        100.0
-                                RIPPLE	         51        100.0
+                                  SLIC	     157.00        100.0
+                                  LUT4	     162.00        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	        291        100.0
+                                RIPPLE	         56        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                    efb	          1         0.0
-                   PulseIn(BITS=13)_U3	          1         7.7
-                     PulseOut(BITS=13)	          1         5.8
-                  PulseOut(BITS=13)_U0	          1         5.8
-                   PulseIn(BITS=13)_U4	          1         7.8
-                   PulseIn(BITS=13)_U1	          1         8.6
-                   PulseIn(BITS=13)_U2	          1         7.4
-                      PulseIn(BITS=13)	          1         9.8
----------------------------------------------------
-Report for cell PulseOut(BITS=13)
-   Instance path: PulseController/y1_pulseout
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	       8.75         5.8
-                                  LUT4	       6.00         3.9
-                                PFUREG	         14         4.9
-                                RIPPLE	          8        15.7
+                     RevolutionCounter	          1         3.3
+                   PulseIn(BITS=13)_U2	          1         7.1
+                   PulseIn(BITS=13)_U4	          1         7.6
+                  PulseOut(BITS=13)_U0	          1         5.6
+                     PulseOut(BITS=13)	          1         5.6
+                   PulseIn(BITS=13)_U3	          1         7.5
+                      PulseIn(BITS=13)	          1         8.3
+                   PulseIn(BITS=13)_U1	          1         8.5
 ---------------------------------------------------
 Report for cell PulseIn(BITS=13)
    Instance path: PulseController/a4_pulsein
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      14.92         9.8
-                                  LUT4	       1.00         0.7
-                                PFUREG	         29        10.2
-                                RIPPLE	          7        13.7
----------------------------------------------------
-Report for cell PulseIn(BITS=13)_U1
-   Instance path: PulseController/a3_pulsein
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      13.08         8.6
-                                  LUT4	       1.00         0.7
-                                PFUREG	         29        10.2
-                                RIPPLE	          7        13.7
----------------------------------------------------
-Report for cell PulseIn(BITS=13)_U2
-   Instance path: PulseController/a2_pulsein
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      11.25         7.4
-                                  LUT4	       1.00         0.7
-                                PFUREG	         29        10.2
-                                RIPPLE	          7        13.7
----------------------------------------------------
-Report for cell PulseIn(BITS=13)_U3
-   Instance path: PulseController/a1_pulsein
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      11.67         7.7
-                                  LUT4	       1.00         0.7
-                                PFUREG	         31        11.0
-                                RIPPLE	          7        13.7
+                                  SLIC	      13.08         8.3
+                                  LUT4	       1.00         0.6
+                                PFUREG	         29        10.0
+                                RIPPLE	          7        12.5
 ---------------------------------------------------
 Report for cell efb
    Instance path: PulseController/efb
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell PulseOut(BITS=13)_U0
-   Instance path: PulseController/y0_pulseout
+Report for cell PulseIn(BITS=13)_U3
+   Instance path: PulseController/a1_pulsein
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.75         5.8
-                                  LUT4	       6.00         3.9
-                                PFUREG	         14         4.9
-                                RIPPLE	          8        15.7
+                                  SLIC	      11.75         7.5
+                                  LUT4	       1.00         0.6
+                                PFUREG	         31        10.7
+                                RIPPLE	          7        12.5
+---------------------------------------------------
+Report for cell PulseIn(BITS=13)_U2
+   Instance path: PulseController/a2_pulsein
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.08         7.1
+                                  LUT4	       1.00         0.6
+                                PFUREG	         29        10.0
+                                RIPPLE	          7        12.5
+---------------------------------------------------
+Report for cell RevolutionCounter
+   Instance path: PulseController/revcounter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.25         3.3
+                                  LUT4	       1.00         0.6
+                                PFUREG	          8         2.7
+                                RIPPLE	          5         8.9
+---------------------------------------------------
+Report for cell PulseIn(BITS=13)_U1
+   Instance path: PulseController/a3_pulsein
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      13.33         8.5
+                                  LUT4	       5.67         3.5
+                                PFUREG	         29        10.0
+                                RIPPLE	          7        12.5
 ---------------------------------------------------
 Report for cell PulseIn(BITS=13)_U4
    Instance path: PulseController/a0_pulsein
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.92         7.8
-                                  LUT4	       1.00         0.7
-                                PFUREG	         31        11.0
-                                RIPPLE	          7        13.7
+                                  SLIC	      11.92         7.6
+                                  LUT4	       1.00         0.6
+                                PFUREG	         31        10.7
+                                RIPPLE	          7        12.5
+---------------------------------------------------
+Report for cell PulseOut(BITS=13)_U0
+   Instance path: PulseController/y0_pulseout
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.75         5.6
+                                  LUT4	       6.00         3.7
+                                PFUREG	         14         4.8
+                                RIPPLE	          8        14.3
+---------------------------------------------------
+Report for cell PulseOut(BITS=13)
+   Instance path: PulseController/y1_pulseout
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.75         5.6
+                                  LUT4	       6.00         3.7
+                                PFUREG	         14         4.8
+                                RIPPLE	          8        14.3

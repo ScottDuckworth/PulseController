@@ -1,0 +1,17 @@
+#Start recording tcl command: 3/28/2021 22:27:01
+#Project Location: C:/Users/scott/Documents/PulseController; Project name: PulseController
+prj_project open "C:/Users/scott/Documents/PulseController/PulseController.ldf"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run Export -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 3/28/2021 23:43:43

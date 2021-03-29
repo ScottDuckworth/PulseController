@@ -14,7 +14,7 @@ Performance Grade:      6
 PACKAGE:          QFN32
 Package Status:                     Preliminary    Version 1.42
 
-Fri Mar 26 00:02:24 2021
+Sun Mar 28 23:42:43 2021
 
 Pinout by Port Name:
 +--------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
@@ -25,6 +25,7 @@ Pinout by Port Name:
 | i_a2_pwm           | 23/0     | LVCMOS33_IN   | PT17D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
 | i_a3_pwm           | 25/0     | LVCMOS33_IN   | PT15D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
 | i_a4_pwm           | 26/0     | LVCMOS33_IN   | PT15C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| i_rev_pulse        | 14/2     | LVCMOS33_IN   | PB11B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
 | o_select_indicator | 13/2     | LVCMOS33_OUT  | PB11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | o_y0_pwm           | 16/2     | LVCMOS33_OUT  | PB20C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
 | o_y1_pwm           | 17/2     | LVCMOS33_OUT  | PB20D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
@@ -63,7 +64,7 @@ Vccio by Bank:
 | 11/2     |     unused, PULL:DOWN |            |               | PB9A  | PCLKT2_0      |           |           |
 | 12/2     | rst                   | LOCATED    | LVCMOS33_IN   | PB9B  | PCLKC2_0      |           |           |
 | 13/2     | o_select_indicator    | LOCATED    | LVCMOS33_OUT  | PB11A | PCLKT2_1      |           |           |
-| 14/2     |     unused, PULL:DOWN |            |               | PB11B | PCLKC2_1      |           |           |
+| 14/2     | i_rev_pulse           | LOCATED    | LVCMOS33_IN   | PB11B | PCLKC2_1      |           |           |
 | 16/2     | o_y0_pwm              | LOCATED    | LVCMOS33_OUT  | PB20C | SN            |           |           |
 | 17/2     | o_y1_pwm              | LOCATED    | LVCMOS33_OUT  | PB20D | SI/SISPI      |           |           |
 | 20/1     | i_a0_pwm              | LOCATED    | LVCMOS33_IN   | PR5D  | PCLKC1_0/DQ0  |           |           |
@@ -187,6 +188,7 @@ LOCATE  COMP  "i_a1_pwm"  SITE  "21";
 LOCATE  COMP  "i_a2_pwm"  SITE  "23";
 LOCATE  COMP  "i_a3_pwm"  SITE  "25";
 LOCATE  COMP  "i_a4_pwm"  SITE  "26";
+LOCATE  COMP  "i_rev_pulse"  SITE  "14";
 LOCATE  COMP  "o_select_indicator"  SITE  "13";
 LOCATE  COMP  "o_y0_pwm"  SITE  "16";
 LOCATE  COMP  "o_y1_pwm"  SITE  "17";
@@ -204,7 +206,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Mar 26 00:02:25 2021
+Sun Mar 28 23:42:43 2021
 
 
 

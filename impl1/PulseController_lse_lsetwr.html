@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Fri Mar 26 00:00:32 2021
+Sun Mar 28 23:42:36 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,47 +27,116 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
-            472 items scored, 472 timing errors detected.
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets i_rev_pulse_c]
+            39 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 2.781ns
+Passed:  The following path meets requirements by 1.353ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \a4_pulsein/pw__i3  (from clk +)
-   Destination:    FD1P3IX    D              wb_dat_i_i0_i2  (to clk +)
+   Source:         FD1S3AX    CK             \revcounter/dff_6_524__i0  (from i_rev_pulse_c +)
+   Destination:    FD1S3AX    D              \revcounter/dff_6_524__i7  (to i_rev_pulse_c +)
 
-   Delay:                   7.648ns  (39.3% logic, 60.7% route), 8 logic levels.
+   Delay:                   3.514ns  (55.1% logic, 44.9% route), 6 logic levels.
 
  Constraint Details:
 
-      7.648ns data_path \a4_pulsein/pw__i3 to wb_dat_i_i0_i2 violates
+      3.514ns data_path \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i7 meets
       5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.781ns
+      0.133ns L_S requirement (totaling 4.867ns) by 1.353ns
 
- Path Details: \a4_pulsein/pw__i3 to wb_dat_i_i0_i2
+ Path Details: \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i7
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \a4_pulsein/pw__i3 (from clk)
-Route         1   e 0.660                                  a4_pw[3]
-LUT4        ---     0.408              A to Z              i2_3_lut_adj_5
-Route         1   e 0.660                                  n2796
-LUT4        ---     0.408              D to Z              i579_4_lut
-Route         1   e 0.660                                  n14
-LUT4        ---     0.408              D to Z              i1_4_lut_adj_4
-Route         1   e 0.660                                  n5
-LUT4        ---     0.408              A to Z              i1304_4_lut
-Route         1   e 0.660                                  n1538
-LUT4        ---     0.408              D to Z              i1740_3_lut_4_lut
-Route         1   e 0.020                                  n1420
-MUXL5       ---     0.193           BLUT to Z              i853
-Route         1   e 0.660                                  n1970
-LUT4        ---     0.408              A to Z              i1357_2_lut
-Route         1   e 0.660                                  n1971
+L_CO        ---     0.367             CK to Q              \revcounter/dff_6_524__i0 (from i_rev_pulse_c)
+Route         2   e 0.838                                  revcount[0]
+A1_TO_FCO   ---     0.684           A[2] to COUT           \revcounter/dff_6_524_add_4_1
+Route         1   e 0.020                                  \revcounter/n2884
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_3
+Route         1   e 0.020                                  \revcounter/n2885
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_5
+Route         1   e 0.020                                  \revcounter/n2886
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_7
+Route         1   e 0.020                                  \revcounter/n2887
+FCI_TO_F    ---     0.495            CIN to S[2]           \revcounter/dff_6_524_add_4_9
+Route         1   e 0.660                                  \revcounter/n38
                   --------
-                    7.648  (39.3% logic, 60.7% route), 8 logic levels.
+                    3.514  (55.1% logic, 44.9% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.503ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \revcounter/dff_6_524__i0  (from i_rev_pulse_c +)
+   Destination:    FD1S3AX    D              \revcounter/dff_6_524__i5  (to i_rev_pulse_c +)
+
+   Delay:                   3.364ns  (53.7% logic, 46.3% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.364ns data_path \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i5 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.503ns
+
+ Path Details: \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \revcounter/dff_6_524__i0 (from i_rev_pulse_c)
+Route         2   e 0.838                                  revcount[0]
+A1_TO_FCO   ---     0.684           A[2] to COUT           \revcounter/dff_6_524_add_4_1
+Route         1   e 0.020                                  \revcounter/n2884
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_3
+Route         1   e 0.020                                  \revcounter/n2885
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_5
+Route         1   e 0.020                                  \revcounter/n2886
+FCI_TO_F    ---     0.495            CIN to S[2]           \revcounter/dff_6_524_add_4_7
+Route         1   e 0.660                                  \revcounter/n40
+                  --------
+                    3.364  (53.7% logic, 46.3% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 1.503ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \revcounter/dff_6_524__i0  (from i_rev_pulse_c +)
+   Destination:    FD1S3AX    D              \revcounter/dff_6_524__i6  (to i_rev_pulse_c +)
+
+   Delay:                   3.364ns  (53.7% logic, 46.3% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.364ns data_path \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i6 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 1.503ns
+
+ Path Details: \revcounter/dff_6_524__i0 to \revcounter/dff_6_524__i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \revcounter/dff_6_524__i0 (from i_rev_pulse_c)
+Route         2   e 0.838                                  revcount[0]
+A1_TO_FCO   ---     0.684           A[2] to COUT           \revcounter/dff_6_524_add_4_1
+Route         1   e 0.020                                  \revcounter/n2884
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_3
+Route         1   e 0.020                                  \revcounter/n2885
+FCI_TO_FCO  ---     0.130            CIN to COUT           \revcounter/dff_6_524_add_4_5
+Route         1   e 0.020                                  \revcounter/n2886
+FCI_TO_F    ---     0.495            CIN to S[2]           \revcounter/dff_6_524_add_4_7
+Route         1   e 0.660                                  \revcounter/n39
+                  --------
+                    3.364  (53.7% logic, 46.3% route), 5 logic levels.
+
+Report: 3.647 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
+            506 items scored, 506 timing errors detected.
+--------------------------------------------------------------------------------
 
 
 Error:  The following path violates requirements by 2.781ns
@@ -90,20 +159,20 @@ Error:  The following path violates requirements by 2.781ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.367             CK to Q              \a4_pulsein/pw__i1 (from clk)
 Route         1   e 0.660                                  a4_pw[1]
-LUT4        ---     0.408              C to Z              i2_3_lut_adj_5
-Route         1   e 0.660                                  n2796
-LUT4        ---     0.408              D to Z              i579_4_lut
-Route         1   e 0.660                                  n14
-LUT4        ---     0.408              D to Z              i1_4_lut_adj_4
-Route         1   e 0.660                                  n5
-LUT4        ---     0.408              A to Z              i1304_4_lut
-Route         1   e 0.660                                  n1538
-LUT4        ---     0.408              D to Z              i1740_3_lut_4_lut
-Route         1   e 0.020                                  n1420
-MUXL5       ---     0.193           BLUT to Z              i853
-Route         1   e 0.660                                  n1970
-LUT4        ---     0.408              A to Z              i1357_2_lut
-Route         1   e 0.660                                  n1971
+LUT4        ---     0.408              D to Z              i1_4_lut_adj_11
+Route         1   e 0.660                                  n4_adj_279
+LUT4        ---     0.408              D to Z              i1_4_lut_adj_10
+Route         1   e 0.660                                  n4_adj_280
+LUT4        ---     0.408              D to Z              i3_4_lut
+Route         1   e 0.660                                  n2962
+LUT4        ---     0.408              B to Z              i1_4_lut_adj_9
+Route         1   e 0.660                                  n3059
+LUT4        ---     0.408              D to Z              i1918_3_lut_4_lut
+Route         1   e 0.020                                  n22
+MUXL5       ---     0.193           BLUT to Z              i16
+Route         1   e 0.660                                  n20
+LUT4        ---     0.408              B to Z              i1_2_lut_adj_18
+Route         1   e 0.660                                  n2046
                   --------
                     7.648  (39.3% logic, 60.7% route), 8 logic levels.
 
@@ -112,36 +181,74 @@ Error:  The following path violates requirements by 2.781ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             \a4_pulsein/pw__i2  (from clk +)
+   Source:         FD1P3AX    CK             \a4_pulsein/pw__i4  (from clk +)
    Destination:    FD1P3IX    D              wb_dat_i_i0_i2  (to clk +)
 
    Delay:                   7.648ns  (39.3% logic, 60.7% route), 8 logic levels.
 
  Constraint Details:
 
-      7.648ns data_path \a4_pulsein/pw__i2 to wb_dat_i_i0_i2 violates
+      7.648ns data_path \a4_pulsein/pw__i4 to wb_dat_i_i0_i2 violates
       5.000ns delay constraint less
       0.133ns L_S requirement (totaling 4.867ns) by 2.781ns
 
- Path Details: \a4_pulsein/pw__i2 to wb_dat_i_i0_i2
+ Path Details: \a4_pulsein/pw__i4 to wb_dat_i_i0_i2
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \a4_pulsein/pw__i2 (from clk)
-Route         1   e 0.660                                  a4_pw[2]
-LUT4        ---     0.408              B to Z              i2_3_lut_adj_5
-Route         1   e 0.660                                  n2796
-LUT4        ---     0.408              D to Z              i579_4_lut
-Route         1   e 0.660                                  n14
-LUT4        ---     0.408              D to Z              i1_4_lut_adj_4
-Route         1   e 0.660                                  n5
-LUT4        ---     0.408              A to Z              i1304_4_lut
-Route         1   e 0.660                                  n1538
-LUT4        ---     0.408              D to Z              i1740_3_lut_4_lut
-Route         1   e 0.020                                  n1420
-MUXL5       ---     0.193           BLUT to Z              i853
-Route         1   e 0.660                                  n1970
-LUT4        ---     0.408              A to Z              i1357_2_lut
-Route         1   e 0.660                                  n1971
+L_CO        ---     0.367             CK to Q              \a4_pulsein/pw__i4 (from clk)
+Route         1   e 0.660                                  a4_pw[4]
+LUT4        ---     0.408              A to Z              i1_4_lut_adj_11
+Route         1   e 0.660                                  n4_adj_279
+LUT4        ---     0.408              D to Z              i1_4_lut_adj_10
+Route         1   e 0.660                                  n4_adj_280
+LUT4        ---     0.408              D to Z              i3_4_lut
+Route         1   e 0.660                                  n2962
+LUT4        ---     0.408              B to Z              i1_4_lut_adj_9
+Route         1   e 0.660                                  n3059
+LUT4        ---     0.408              D to Z              i1918_3_lut_4_lut
+Route         1   e 0.020                                  n22
+MUXL5       ---     0.193           BLUT to Z              i16
+Route         1   e 0.660                                  n20
+LUT4        ---     0.408              B to Z              i1_2_lut_adj_18
+Route         1   e 0.660                                  n2046
+                  --------
+                    7.648  (39.3% logic, 60.7% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 2.781ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \a4_pulsein/pw__i3  (from clk +)
+   Destination:    FD1P3IX    D              wb_dat_i_i0_i2  (to clk +)
+
+   Delay:                   7.648ns  (39.3% logic, 60.7% route), 8 logic levels.
+
+ Constraint Details:
+
+      7.648ns data_path \a4_pulsein/pw__i3 to wb_dat_i_i0_i2 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 2.781ns
+
+ Path Details: \a4_pulsein/pw__i3 to wb_dat_i_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \a4_pulsein/pw__i3 (from clk)
+Route         1   e 0.660                                  a4_pw[3]
+LUT4        ---     0.408              B to Z              i1_4_lut_adj_11
+Route         1   e 0.660                                  n4_adj_279
+LUT4        ---     0.408              D to Z              i1_4_lut_adj_10
+Route         1   e 0.660                                  n4_adj_280
+LUT4        ---     0.408              D to Z              i3_4_lut
+Route         1   e 0.660                                  n2962
+LUT4        ---     0.408              B to Z              i1_4_lut_adj_9
+Route         1   e 0.660                                  n3059
+LUT4        ---     0.408              D to Z              i1918_3_lut_4_lut
+Route         1   e 0.020                                  n22
+MUXL5       ---     0.193           BLUT to Z              i16
+Route         1   e 0.660                                  n20
+LUT4        ---     0.408              B to Z              i1_2_lut_adj_18
+Route         1   e 0.660                                  n2046
                   --------
                     7.648  (39.3% logic, 60.7% route), 8 logic levels.
 
@@ -155,6 +262,9 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets i_rev_pulse_c]           |     5.000 ns|     3.647 ns|     6  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets clk]                     |     5.000 ns|     7.781 ns|     8 *
                                         |             |             |
 --------------------------------------------------------------------------------
@@ -165,41 +275,41 @@ clk0 [get_nets clk]                     |     5.000 ns|     7.781 ns|     8 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-n5_adj_271                              |       1|     163|     34.53%
+n5_adj_276                              |       1|     163|     32.21%
                                         |        |        |
-o_select_indicator_c                    |      28|     163|     34.53%
+o_select_indicator_c                    |      28|     163|     32.21%
                                         |        |        |
-n14_adj_267                             |       1|     162|     34.32%
+n14                                     |       1|     162|     32.02%
                                         |        |        |
-\y0_pulseout/n51                        |       1|     133|     28.18%
+\y0_pulseout/n51                        |       1|     133|     26.28%
                                         |        |        |
-\y1_pulseout/n51                        |       1|     133|     28.18%
+\y1_pulseout/n51                        |       1|     133|     26.28%
                                         |        |        |
-\y0_pulseout/n2757                      |       1|     121|     25.64%
+\y0_pulseout/n2892                      |       1|     121|     23.91%
                                         |        |        |
-\y1_pulseout/n2733                      |       1|     121|     25.64%
+\y1_pulseout/n2909                      |       1|     121|     23.91%
                                         |        |        |
-\y0_pulseout/n24                        |       2|     100|     21.19%
+\y0_pulseout/n24                        |       2|     100|     19.76%
                                         |        |        |
-\y1_pulseout/n24                        |       2|     100|     21.19%
+\y1_pulseout/n24                        |       2|     100|     19.76%
                                         |        |        |
-\y0_pulseout/n2758                      |       1|      99|     20.97%
+\y0_pulseout/n2893                      |       1|      99|     19.57%
                                         |        |        |
-\y1_pulseout/n2734                      |       1|      99|     20.97%
+\y1_pulseout/n2910                      |       1|      99|     19.57%
                                         |        |        |
-n2798                                   |       1|      81|     17.16%
+n2967                                   |       1|      81|     16.01%
                                         |        |        |
-\y0_pulseout/n2759                      |       1|      77|     16.31%
+\y0_pulseout/n2894                      |       1|      77|     15.22%
                                         |        |        |
-\y1_pulseout/n2735                      |       1|      77|     16.31%
+\y1_pulseout/n2911                      |       1|      77|     15.22%
                                         |        |        |
-\y0_pulseout/n2760                      |       1|      55|     11.65%
+\y0_pulseout/n2895                      |       1|      55|     10.87%
                                         |        |        |
-\y1_pulseout/n2736                      |       1|      55|     11.65%
+\y1_pulseout/n2912                      |       1|      55|     10.87%
                                         |        |        |
-\y0_pulseout/n22                        |       1|      52|     11.02%
+\y0_pulseout/n22                        |       1|      52|     10.28%
                                         |        |        |
-\y1_pulseout/n22                        |       1|      52|     11.02%
+\y1_pulseout/n22                        |       1|      52|     10.28%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -207,12 +317,12 @@ n2798                                   |       1|      81|     17.16%
 <A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
 ---------------
 
-Timing errors: 472  Score: 677515
+Timing errors: 506  Score: 708958
 
-Constraints cover  3247 paths, 567 nets, and 1449 connections (94.0% coverage)
+Constraints cover  3307 paths, 595 nets, and 1493 connections (93.7% coverage)
 
 
-Peak memory: 61607936 bytes, TRCE: 3239936 bytes, DLYMAN: 163840 bytes
+Peak memory: 61698048 bytes, TRCE: 3112960 bytes, DLYMAN: 163840 bytes
 CPU_TIME_REPORT: 0 secs 
 
 
